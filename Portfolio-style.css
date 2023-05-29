@@ -1,4 +1,53 @@
 /*-- 作品 - 滾動視差 --*/
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* ----------main-top---------- */
+.main-top{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient(#9d235a,#e9d8e5);
+
+}
+
+.top img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.myself{
+    display: flex;
+    height: 100vh;
+    width:  100%;
+    background: linear-gradient(#681e4d,#0e070c);
+}
+
+.top img#mainFont-Right{
+    transform: translateX(640px);
+}
+.top img#mainFont-Left {
+    transform: translateX(-550px);
+}
+.top img#mainBack{
+    transform: translateY(-20px);
+}
+
+
+
+
+/* ----------介紹區塊---------- */
 
 .work_bg{
     width: 100%;
@@ -29,40 +78,50 @@
 }
 
 
-/* 介紹區塊 */
 .introduce{
-    background-color: #1a1a1a;
+    background: linear-gradient(#250c1d,#0e070c);
     height: 30vh;
     overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding-bottom: 30px;
 }
 .txt{
     color: aliceblue;
     display: flex;
     justify-content: center;
-    width: 70%;
+    align-items: start;
+    width: 60%;
     margin: auto;
     letter-spacing: 2px;
+    /* background-color: #52c03e; */
 
 }
 .txt h3{
-    width: 20%;
-    font-size: 30px;
+    width: 15%;
+    line-height: 50px;
+    font-size: 21px;
     font-weight: 600;
+    /* background-color: #de4747; */
+    margin-top: 0px;
 
 
 }
 .txt p{
     width: 80%;
-    font-size: 25px;
+    font-size: 16px;
+    line-height: 40px;
+    display: flex;
+    align-items: start;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    /* background-color: #de4747; */
 }
 
 .introduce a{
     width: 200px;
-    height: 50px;
+    height: 45px;
     background-color: rgba(225, 225, 225, 0.2);
     border-radius: 30px;
     border: #fff solid 1px;
@@ -70,13 +129,46 @@
     margin: auto;
     margin-top: -20px;
     text-decoration: none;
-
+    overflow: hidden;
+    position: relative;
 }
 .introduce a p{
-    font-size: 25px;
+    font-size: 21px;
     color: aliceblue;
-    /* display: flex;
-    justify-content: center; */
-    transform: translate(20%,-50%);
+    transform: translate(20%,-43%);
+    
+}
+.introduce a::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 195px;
+    left: 100px;
+    border-radius: 95px;
+    background-color: #6d6a6a;
+    transition: all 1s ease;
+    animation: wave 4.5s infinite linear;
+}
+.introduce a p:hover{
+    color: rgb(35, 35, 35);
+    font-weight: 600;
 
+}
+@keyframes wave{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.introduce a:hover::before{
+    top: 125px;
+    transition: 0.5s ease-in-out;
+    background-color: #cfcaca;
+}
+.introduce a:active::before{
+    background-color: #9c9a9c;
+    transition: all 0.1s ease;
 }
