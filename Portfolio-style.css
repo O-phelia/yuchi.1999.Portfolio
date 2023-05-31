@@ -211,12 +211,17 @@ body{
     }
     .txt h3{
         width: 100%;
-        font-size: 22px;
+        font-size: 18px;
     }
     .txt p{
         width: 100%;
-        font-size: 17px;
-}
+        font-size: 14px;
+    }
+    .work_bg{
+        height: 65vh;}
+    .introduce{
+        height: 35vh;
+    }
 }
 
 @media (max-width: 992px){
@@ -228,14 +233,64 @@ body{
         font-size: 20px;
     }
     .txt p{
-        width: 100%;
         font-size: 15px;
+    }
+    .work_bg{
+        height: 70vh;
+    }
+    .introduce{
+        height: 30vh;
 }
+}
+
+@media (max-width: 916px){
+    .title{
+        font-size: 70px;
+    }
+    .txt h3{
+        font-size: 15px;
+    }
+    .txt p{
+        font-size: 13px;
+    }
+    .work_bg{
+        height: 100vh;}
+    .introduce{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 913px){
+    .title{
+        font-size: 65px;
+    }
+    .txt h3{
+        font-size: 16px;
+    }
+    .txt p{
+        font-size: 14px;
+    }
+    .work_bg{
+        height: 60vh;
+        background-size:850px 550px; 
+    }
+    .introduce{
+        height: 40vh;
+    }
+}
+@media (max-width: 740px){
+
+    .work_bg{
+        height: 100vh;
+    }
+    .introduce{
+        height: 100vh;
+    }
 }
 
 @media (max-width: 576px){
     .title{
-        font-size: 85px;
+        font-size: 82px;
         margin-left: 10%;
     }
     .work_bg{
@@ -255,8 +310,8 @@ body{
         height: 40vh;
     }
     .title{
-        font-size: 60px;
-        margin-left: 10%;
+        font-size: 50px;
+        margin-left: 6%;
     }
     .work_bg{
         background-size:550px 330px; 
@@ -266,8 +321,8 @@ body{
         font-weight: 600;
     }
     .txt p{
-        line-height: 30px;
-        font-size: 13px;
+        line-height: 25px;
+        font-size: 12px;
     }
     .introduce a{
         width: 150px;
@@ -277,6 +332,11 @@ body{
         font-size: 17px;
         transform: translate(15%,-35%);
     }
-
+    .introduce a::before{
+        content: '';
+        position: absolute;
+        left: 70px;
+    }
 }
+
 
