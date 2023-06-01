@@ -6,10 +6,10 @@ header{
     position: fixed;
     top: 0;
     left: 10%;
-    padding: 5px;
+    padding:5px 0px;
     width: 80%;
     background-color: #dfd4d4;
-    opacity: 0.7;
+    opacity: 0.9;
     transition: all 0.5s ease;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 2px 15px rgba(249, 239, 239, 0.5);
@@ -183,3 +183,115 @@ header ul::after{
     }
 }
 /* --------------------------------------- 以上導覽列 ------------------------------------------- */
+
+.work{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+}
+h4{
+    line-height: 30px;
+    font-family: '微軟正黑體';
+}
+h5{
+    line-height: 35px;
+    font-family: '微軟正黑體';
+}
+
+
+
+/* exhibition */
+.exhibition{
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 15px rgba(33, 32, 32, 0.7);
+    padding: 20px;
+}
+.exhibition1{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.exhibition1 img{
+    width: 100%;
+}
+.exhibition2{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.exhibition2 img{
+    width: 33.3%;
+}
+/* tableplay */
+.tableplay{
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 15px rgba(33, 32, 32, 0.7);
+    padding: 20px;
+}
+.tableplay1{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.tableplay img{
+    width: 100%;
+}
+.tableplay2{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+/* ineed */
+.ineed{
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 15px rgba(33, 32, 32, 0.7);
+    padding: 20px;
+}
+.ineed1{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.ineed1 img{
+    width: 100%;
+}
+
+.ineed2{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+.ineed2 img{
+    width: 33.3%;
+}
+.ineed3{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.ineed3 img{
+    width: 100%;
+}
+.Txt{
+    padding-left: 10px;
+    width: 60%;
+    letter-spacing: 2px;
+    line-height: 15px;
+    color: rgb(255, 0, 162);
+}
+
+/* -1 */
+.onetime{
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 15px rgba(33, 32, 32, 0.7);
+    padding: 20px;
+}
+.onetime1{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.onetime1 img{
+    width: 100%;
+    margin-bottom: 30px;
+
+}
