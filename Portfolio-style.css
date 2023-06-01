@@ -336,7 +336,10 @@ body{
         content: '';
         position: absolute;
         left: 70px;
+        width: 290px;
+        height: 290px;
     }
+    
 }
 
 
