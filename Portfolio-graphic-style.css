@@ -373,6 +373,11 @@ h5{
         padding-left: 0px;
         margin: auto;
     }
+    .work span{
+        font-size: 17px;
+        letter-spacing: 2px;
+    
+    }
 }
 /* ------------------------------------backhome------------------------------------- */
 .backBtn{
