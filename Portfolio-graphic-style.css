@@ -461,6 +461,9 @@ footer{
     justify-content: space-around;
     margin-bottom: 10%;
 }
+.fa-line{
+    transform: scale(0.95);
+}
 .footer_txt{
     width: 100%;
     margin: auto;
