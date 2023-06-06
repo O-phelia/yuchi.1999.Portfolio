@@ -8,7 +8,11 @@
     transition: all 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
-
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .effect::after{
     content: '';
@@ -88,13 +92,7 @@ h5{
     }
 }
 /* --------------------------------------- 作品 ------------------------------------------- */
-.cu-studio{
-    margin-bottom: 60px;
-    background-color: #393030;
-    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
-    padding: 20px;
-    transition: all 0.3s ease-in-out;
-}
+
 .cu-studio img{
     width: 100%;
 }
@@ -108,5 +106,72 @@ h5{
 @media (max-width:600px){
     .cu{
         padding: 10px 0px 0px 0px;
+    }
+}
+
+/* ozenna */
+
+.ozenna img{
+    width: 100%;
+}
+.oz{
+    margin-top: 10px;
+}
+/* cofelogo */
+.cofelogo{
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.cofelogo img{
+    width: 100%;
+
+}
+.cofelogo2{
+    margin-top: -5px;
+}
+/* foodmenu */
+
+.foodmenu1 img{
+    width: 100%;
+    
+}
+.foodmenu2{
+    margin-top: 20px;
+    display: flex;
+}
+.foodmenu2 img{
+    width: 100%;
+
+}
+/* hostfamily */
+.host img{
+    width: 100%;
+}
+.host2{
+    margin-top: -5px;
+    display: flex;
+}
+.host2 img{
+    width: 100%;
+}
+/* AD */
+.AD1{
+    display: flex;
+}
+.AD img{
+    width: 50%;
+}
+@media (max-width:600px){
+    .AD1{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AD1 img{
+        width: 100%;
+        margin-top: 20px;
     }
 }
