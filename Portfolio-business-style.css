@@ -117,6 +117,11 @@ h5{
 .oz{
     margin-top: 10px;
 }
+@media (min-width:991px){
+    .ozenna3{
+        padding: 0 4.9%;
+    }
+}
 /* cofelogo */
 .cofelogo{
     margin-bottom: 60px;
@@ -132,6 +137,8 @@ h5{
 .cofelogo2{
     margin-top: -5px;
 }
+
+
 /* foodmenu */
 
 .foodmenu1 img{
