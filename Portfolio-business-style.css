@@ -75,6 +75,12 @@ h5{
     .effect{
         padding: 40px;
     }
+    .effect:hover::after{
+        bottom: 40%;
+        transform: scale(18);
+        transition: all 1.3s ease-in-out;
+        
+    }
 }
 @media (max-width:600px){
     .work{
