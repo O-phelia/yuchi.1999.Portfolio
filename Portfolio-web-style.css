@@ -1,1 +1,177 @@
+
+.work{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+}
+.effect{
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.effect::after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 162);
+    opacity: 0.8;
+
+    position: absolute;
+    bottom: -320px;
+    left: 38%;
+    transform: scale(2);
+    border-radius: 50%;
+    transition: all 1.3s ease-in-out;
+    z-index: -1;
+}
+
+
+.effect:hover{
+    background-color:rgba(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
+}
+.effect:hover::after{
+    bottom: 40%;
+    transform: scale(13);
+    transition: all 1.3s ease-in-out;
+    
+}
+
+
+h4{
+    line-height: 30px;
+    font-family: '微軟正黑體';
+}
+h5{
+    line-height: 35px;
+    font-family: '微軟正黑體';
+}
+
+.work span{
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+.Txt{
+    padding-left: 10px;
+    width: 62%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 15px;
+    color: rgb(255, 0, 162);
+    cursor: default;
+}
+
+@media (min-width:992px){
+    .work{
+        width: 80%;
+    }
+    .effect{
+        padding: 40px;
+    }
+    .effect:hover::after{
+        bottom: 40%;
+        transform: scale(18);
+        transition: all 1.3s ease-in-out;
+        
+    }
+}
+@media (max-width:600px){
+    .work{
+        margin-top: 20%;
+    }
+    .Txt{
+        width: 90%;
+        padding-left: 0px;
+        margin: auto;
+    }
+    .work span{
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+}
+
+/* LINK BTN */
+.LinkBtn{
+    display: flex;
+    box-shadow: 0px 0px 0.5px rgba(255, 255, 255, 0.8);
+
+}
+.LinkBtn a{
+    width: 200px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    font-family: 'Aboreto', cursive;
+    display: block;
+    margin: 50px auto;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    animation: light 0.5s infinite linear alternate;
+}
+.LinkBtn1 p{
+    font-size: 21px;
+    color: aliceblue;
+    transform: translate(20%,-43%);
+}
+
+.LinkBtn a p:hover{
+    color: rgb(255, 0, 162);
+    font-weight: 600;
+}
+.LinkBtn a:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #ffffff;
+}
+@keyframes light{
+    0%{
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+/* ooooooooooooooooooooooooooooooo */
+@media (max-width: 600px){
+    .LinkBtn a{
+        width: 170px;
+    }
+    .LinkBtn1 p{
+        font-size: 18px;
+        transform: translate(20%,-30%);
+    }
+
+}
 /* --------------------------------------- 作品 ------------------------------------------- */
+.japan img{
+    width: 100%;
+}
+.japan2{
+    background-color: #fff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+.japan2 img{
+    width: 15%;
+}
+.book1 img{
+    width: 100%;
+
+}
+.donut img{
+    width: 100%;
+}
