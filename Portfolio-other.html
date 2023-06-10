@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUCHI-OTHER</title>
+    <link rel="stylesheet" href="./animate.min.css">
     <link rel="stylesheet" href="./Portfolio-other-style.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./navbar-btn-footer-style.css">
@@ -18,7 +19,7 @@
         </label>
         <input type="checkbox" name="" id="menu-toggler">
 
-        <a href="./Portfolio.html" class="logo">YUCHI.<br>PORTFO</a>
+        <a href="./Portfolio.html" class="logo wow animate__animated animate__flipInY"data-wow-duration="1.2s">YUCHI.<br>PORTFO</a>
         <hr style="color: rgb(228, 231, 233);">
 
         <ul class="navbar">
@@ -34,7 +35,7 @@
 
     <section class="work">
 
-        <div class="timemeet effect" >
+        <div class="timemeet effect wow animate__animated animate__slideInUp" >
             <div class="Txt">
                 <h4><span> ▋ PROJECT NAME "</span>微電影-時逅 </h4>
                 <h4><span>  ▋ SOFTWARE & SKILLS "</span><br> PR / 視覺設計 / 監製 / 剪輯與後製</h4>
@@ -65,7 +66,7 @@
 
         </div>
 
-        <div class="culture effect" >
+        <div class="culture effect wow animate__animated animate__slideInUp" >
             <div class="Txt">
                 <h4><span> ▋ PROJECT NAME "</span>御前清客-文化訪談</h4>
                 <h4><span>  ▋ SOFTWARE & SKILLS "</span><br> PR / 片頭設計 / 實錄 / 剪輯與後製</h4>
@@ -93,7 +94,7 @@
 
         </div>
 
-        <div class="issue effect" >
+        <div class="issue effect wow animate__animated animate__bounceInUp" data-wow-delay="0.5s" >
             <div class="issue_div">
                 <div class="issuepic">
                     <a href="https://issuu.com/_uc.0813/docs/2021_"><img src="./img/平面視覺設計/平面設計-封面.png" ></a>
@@ -101,7 +102,9 @@
                 <div class="Txt issuetxt">
                     <h4><span> ▋ PROJECT NAME "</span>ZONE ISSUU作品集</h4>
                     <h5><span> ▋ INTRODUCTION " </span><br>【Design take me into the zone. 】 人們總在找尋一件自己熱愛的事，並體驗為之瘋狂的感受。 進入心流狀態，彷彿時間不再照著指針走，沒有所謂的意亂心煩，也察覺不到夜晚的寂靜，而這種投入的感受，正是我所嚮往。</h5>
-                    <a href="https://issuu.com/_uc.0813/docs/2021_">點擊查看更多</a>
+                    <div class="LinkBtn">
+                        <a href="https://o-phelia.github.io/webtryxox/webtry" class="LinkBtn1"><p>GO TO LINK</p></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,6 +148,10 @@
     </script>
 
     <script src="./page.js"></script>
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>
 
 </body>

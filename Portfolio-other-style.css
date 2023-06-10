@@ -21,7 +21,7 @@
     opacity: 0.8;
 
     position: absolute;
-    top: -700px;
+    top: -800px;
     left: 15%;
     transform: scale(2);
     border-radius: 50%;
@@ -171,12 +171,59 @@ iframe{
 .issue img{
     width: 100%;
 }
-.issuetxt a{
-    text-decoration: none;
-    color: aqua;
+
+/* LINK BTN */
+.LinkBtn{
+    display: flex;
+
 }
-.issuetxt a:hover{
+.LinkBtn a{
+    width: 200px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    font-family: 'Aboreto', cursive;
+    display: block;
+    margin: 50px auto;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    animation: light 0.5s infinite linear alternate;
+}
+.LinkBtn1 p{
+    font-size: 21px;
     color: aliceblue;
+    transform: translate(15%,-43%);
+}
+
+.LinkBtn a p:hover{
+    color: rgb(255, 0, 162);
+    font-weight: 600;
+}
+.LinkBtn a:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #ffffff;
+}
+@keyframes light{
+    0%{
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+/* ooooooooooooooooooooooooooooooo */
+@media (max-width: 600px){
+    .LinkBtn a{
+        width: 170px;
+    }
+    .LinkBtn1 p{
+        font-size: 18px;
+        transform: translate(15%,-30%);
+    }
 
 }
 .issue{
