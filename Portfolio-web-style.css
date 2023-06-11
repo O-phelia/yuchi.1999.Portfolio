@@ -174,3 +174,49 @@ h5{
 .donut img{
     width: 100%;
 }
+.donut1{
+    position: relative;
+}
+.donutpic img{
+    width: 90%;
+}
+.donutpic {
+    width: 40%;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    animation: donut 1s ease  infinite alternate none;
+}
+.donut2{
+    background-color: #ffffff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+.donut2 img{
+    width: 180px;
+
+}
+@keyframes donut{
+    0%{
+    transform: translateY(30px) ;
+    }
+    100%{
+        transform: translateY(-20px) ;
+    }
+}
+@keyframes donut-phone{
+    0%{
+    transform: translateY(1px) ;
+    }
+    100%{
+        transform: translateY(-10px) ;
+    }
+}
+@media (max-width: 600px){
+    .donutpic{
+        animation: donut-phone 1s ease  infinite alternate none;
+    }
+
+}
