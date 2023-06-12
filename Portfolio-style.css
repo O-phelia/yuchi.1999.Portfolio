@@ -16,10 +16,22 @@ body{
     background: linear-gradient(#9d235a,#e9d8e5);
     overflow-x: hidden;
 }
+.logo{
 
+    font-size: 100px;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(250, 217, 217);
+    letter-spacing: 10px;
+    font-family: 'Tilt Warp', cursive;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+    
 .top img{
     position: absolute;
-    /* width:100%; */
+    width:100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -272,7 +284,7 @@ body{
     }
     .work_bg{
         height: 60vh;
-        background-size:850px 550px; 
+        background-size:850px 500px; 
     }
     .introduce{
         height: 40vh;

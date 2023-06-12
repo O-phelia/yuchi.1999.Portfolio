@@ -37,7 +37,7 @@
 }
 .effect:hover::after{
     bottom: 40%;
-    transform: scale(13);
+    transform: scale(18);
     transition: all 1.3s ease-in-out;
     
 }
@@ -45,10 +45,7 @@
 
 h4{
     line-height: 30px;
-    font-family: '微軟正黑體';
-}
-h5{
-    line-height: 35px;
+    font-weight: 600;
     font-family: '微軟正黑體';
 }
 
@@ -62,11 +59,13 @@ h5{
 }
 .Txt{
     padding-left: 10px;
-    width: 62%;
+    width: 47%;
     letter-spacing: 2px;
     font-weight: 600;
     line-height: 15px;
-    color: rgb(255, 0, 162);
+    color: rgb(202, 0, 128);
+    /* color: rgb(255, 0, 162); */
+
     cursor: default;
 }
 
@@ -77,16 +76,23 @@ h5{
     .effect{
         padding: 40px;
     }
-    .effect:hover::after{
-        bottom: 40%;
-        transform: scale(18);
-        transition: all 1.3s ease-in-out;
-        
+}
+@media (max-width:992px){
+    .Txt{
+        width: 60%;
     }
+
+    .effect:hover{
+        pointer-events: none;
+    }
+    .effect:hover::after{
+        pointer-events: none;
+    }
+
 }
 @media (max-width:600px){
     .work{
-        margin-top: 20%;
+        margin-top: 25%;
     }
     .Txt{
         width: 90%;
@@ -111,7 +117,9 @@ h5{
     border-radius: 30px;
     font-family: 'Aboreto', cursive;
     display: block;
-    margin: 50px auto;
+    margin:  auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-decoration: none;
     overflow: hidden;
     position: relative;
@@ -195,7 +203,7 @@ h5{
     margin-top: -5px;
 }
 .donut2 img{
-    width: 180px;
+    width: 25%;
 
 }
 @keyframes donut{
