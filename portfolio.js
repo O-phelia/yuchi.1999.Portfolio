@@ -8,5 +8,5 @@ window.addEventListener('scroll', function(){
     Cloud.style.left = value*-0.25+'px';
     Right.style.left = value*-0.6+'px';
     Left.style.left = value*0.6+'px';
-    Back.style.top = value*-0.1+'px';
+    // Back.style.top = value*-0.1+'px';
 })
