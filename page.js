@@ -43,7 +43,28 @@ bugar_close.addEventListener('click',function(){
 // });
 
 
-
+if (window.innerWidth >= 1000) {
+  effects.forEach(function(effect) {
+  var timeoutId;
+  
+  effect.addEventListener("mouseover", function() {
+    clearTimeout(timeoutId);
+    txts.forEach(function(txt) {
+      txt.style.color = "rgb(43, 42, 40)";
+    });
+  });
+  
+  effect.addEventListener("mouseout", function() {
+    clearTimeout(timeoutId);
+  
+    timeoutId = setTimeout(function() {
+      txts.forEach(function(txt) {
+        txt.style.color = "rgb(255, 0, 162)";
+      });
+    }, 300);
+  });
+  });
+  }
 
 
 

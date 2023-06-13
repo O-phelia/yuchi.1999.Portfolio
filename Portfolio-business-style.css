@@ -31,16 +31,7 @@
 }
 
 
-.effect:hover{
-    background-color:rgba(255, 255, 255, 0);
-    transition: all 0.3s ease-in-out;
-}
-.effect:hover::after{
-    bottom: 40%;
-    transform: scale(13);
-    transition: all 1.3s ease-in-out;
-    
-}
+
 
 
 h4{
@@ -68,9 +59,18 @@ h4{
 @media (min-width:992px){
     .work{
         width: 80%;
+}
+}
+@media (min-width:1000px){
+    .work{
+        width: 80%;
     }
     .effect{
-        padding: 40px;
+        padding: 30px;
+    }
+    .effect:hover{
+        background-color:rgba(255, 255, 255, 0);
+        transition: all 0.3s ease-in-out;
     }
     .effect:hover::after{
         bottom: 40%;
@@ -82,13 +82,6 @@ h4{
 @media (max-width:992px){
     .Txt{
         width: 60%;
-    }
-
-    .effect:hover{
-        pointer-events: none;
-    }
-    .effect:hover::after{
-        pointer-events: none;
     }
 
 }
