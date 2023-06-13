@@ -42,32 +42,39 @@ bugar_close.addEventListener('click',function(){
 
 // });
 
-effects.forEach(function(effect) {
 
-  var timeoutId; // 用於儲存延遲操作的 timeout ID
 
-  effect.addEventListener("mouseover", function() {
-    clearTimeout(timeoutId); // 如果存在延遲操作，則在滑鼠移入時清除它
-    if (window.innerWidth >= 992) { // 檢查螢幕寬度是否大於或等於 900
-      txts.forEach(function(txt) {
-        txt.style.color = "rgb(43, 42, 40)";
-      });
-    }
-  });
 
-  effect.addEventListener("mouseout", function() {
-    clearTimeout(timeoutId); // 如果存在延遲操作，則在滑鼠移出時清除它
 
-    timeoutId = setTimeout(function() {
-      if (window.innerWidth >= 992) { // 檢查螢幕寬度是否大於或等於 900
-        txts.forEach(function(txt) {
-          txt.style.color = "rgb(255, 0, 162)";
-        });
-      }
-    }, 300); // 設定延遲時間（以毫秒為單位）
-  });
 
-});
+// effects.forEach(function(effect) {
+
+//   var timeoutId; // 用於儲存延遲操作的 timeout ID
+
+//   effect.addEventListener("mouseover", function() {
+//     clearTimeout(timeoutId); // 如果存在延遲操作，則在滑鼠移入時清除它
+//     if (window.innerWidth >= 992) { // 檢查螢幕寬度是否大於或等於 900
+//       txts.forEach(function(txt) {
+//         txt.style.color = "rgb(43, 42, 40)";
+//       });
+//     }
+//   });
+
+//   effect.addEventListener("mouseout", function() {
+//     clearTimeout(timeoutId); // 如果存在延遲操作，則在滑鼠移出時清除它
+
+//     timeoutId = setTimeout(function() {
+//       if (window.innerWidth >= 992) { // 檢查螢幕寬度是否大於或等於 900
+//         txts.forEach(function(txt) {
+//           txt.style.color = "rgb(255, 0, 162)";
+//         });
+//       }
+//     }, 300); // 設定延遲時間（以毫秒為單位）
+//   });
+
+// });
+
+
 
 
 
