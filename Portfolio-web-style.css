@@ -164,6 +164,16 @@ h4{
     }
 
 }
+@media (max-width: 400px){
+    .LinkBtn a{
+        width: 170px;
+    }
+    .LinkBtn1 p{
+        font-size: 18px;
+        transform: translate(18%,-30%);
+    }
+
+}
 /* --------------------------------------- 作品 ------------------------------------------- */
 .japan img{
     width: 100%;

@@ -228,11 +228,15 @@ header ul::after{
     font-size: 21px;
     color: aliceblue;
     transform: translate(22%,-43%);
+    letter-spacing: 1px;
+
 }
 .top p{
     font-size: 21px;
     color: aliceblue;
     transform: translate(38%,-43%);
+    letter-spacing: 1px;
+
 }
 .top{
     margin-left: 5px;
@@ -248,7 +252,7 @@ header ul::after{
     top: 130px;
     left: 100px;
     border-radius: 80px;
-    background-color: #797575;
+    background-color: #938b8b;
     transition: all 1s ease;
     animation: wave 4.5s infinite linear;
 }
@@ -297,6 +301,32 @@ header ul::after{
     .backBtn a:hover::before{
         width: 200px;
         height: 200px;
+    }
+}
+@media (max-width: 400px){
+    .backBtn a{
+        width: 140px;
+    }
+    .backBtn1 p{
+        font-size: 17px;
+        transform: translate(15%,-30%);
+    }
+    .top p{
+        font-size: 18px;
+        transform: translate(36%,-35%);
+    }
+    .backBtn a::before{
+        content: '';
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        top: 120px;
+        left: 73px;
+        border-radius: 68px;
+    }
+    .backBtn a:hover::before{
+        width: 170px;
+        height: 170px;
     }
 }
 
