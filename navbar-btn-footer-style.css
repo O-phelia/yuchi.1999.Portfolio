@@ -2,11 +2,14 @@ body{
     overflow-x: hidden;
     background-color: #5a4e4e;
     overflow: overlay;
+    padding: 0px;
+    width: 100%;
+
 }
 
 ::-webkit-scrollbar{
-    width: 26px;
-    background-color: transparent;
+    width: 24px;
+    background-color: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgba(255, 255, 255, 0.3);
@@ -14,6 +17,7 @@ body{
     border: 5px solid transparent;
     background-clip: content-box;
 }
+
 /* --------------------------------------- 導覽列 ------------------------------------------- */
 
 header{
