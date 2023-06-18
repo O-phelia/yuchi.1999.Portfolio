@@ -22,15 +22,15 @@
         <div class="top">
             <img src="./img/Top-img/PNG/T-back(雜點).png" id="mainBack">
             <img src="./img/Top-img/T-雲-01.svg" id="mainCloud">
-            <img src="./img/Top-img/PNG/T-font-R(雜點).png" id="mainFont-Right">
-            <img src="./img/Top-img/PNG/T-font-L(雜點).png" id="mainFont-Left">
+            <div class="topr"> <img src="./img/Top-img/PNG/T-font-R(雜點).png" id="mainFont-Right"></div>
+            <div class="topl"></div><img src="./img/Top-img/PNG/T-font-L(雜點).png" id="mainFont-Left"></div>
         </div>
     </section>
 
 
     <section class="myself">
 
-        <div class="wrap">
+        <div class="wrap wow animate__animated animate__slideInUp">
             <div class="Yuchi">
                 <div class="pic">
                     <img src="./img/網頁/3.png" alt="">
@@ -42,11 +42,9 @@
             </div>
 
 
-            <div class="wrap2">
+            <div class="wrap2 ">
 
-                
-
-                <div class="aboutme">
+                <div class="aboutme wow animate__animated animate__slideInUp">
                         <div class="txt1 txt-con">
                             <h2>|個人資訊</h2>
                             <h3>Yu - Chi  LO</h3>
@@ -61,7 +59,7 @@
                         </div>
                 </div>
 
-                <div class="skill">
+                <div class="skill wow animate__animated animate__slideInUp">
                         <div class=" txt1 txt-con">
                             <h2>|相關證照</h2>
                             <h3>網頁設計 - 丙級</h3>
@@ -78,10 +76,10 @@
                         </div>
                 </div>
 
-                <div class="software">
+                <div class="software wow animate__animated animate__slideInUp" >
                         <img src="./img/Top-img/tools.png" alt=""><img src="./img/Top-img/tools2.png" alt="">
                 </div>
-                
+
                 <div class="talk">
                     <h4>
                         透過科技縮短生活與美的距離，讓美不只存在於圖紙影像，同時也成為能夠被使用的產品，並且賦予強大功能性。
@@ -162,6 +160,10 @@
         </div>
     </footer>
 
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./portfolio.js"></script>
     <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>
 </body>

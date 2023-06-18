@@ -14,7 +14,7 @@ body{
     height: 120vh;
     width: 100%;
     background: linear-gradient(#9d235a,#e9d8e5);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .logo{
 
@@ -29,13 +29,25 @@ body{
     left: 10%;
 }
     
+.top{
+    width:100%;
+    height: 100vh;
+
+}
+.topr{
+    width: 2000px;
+}
+.topl{
+    width: 1000px;
+    background-color: #fff;
+
+}
 .top img{
     position: absolute;
-    width:100%;
     height: 100%;
     top: 0;
     left: 0;
-    object-fit: cover;
+
 }
 
 
@@ -43,33 +55,74 @@ body{
 
 .top img#mainCloud{
     width:100%;
+    object-fit: cover;
 
 }
 .top img#mainFont-Right{
     width:100%;
-    transform: translateX(550px);
+    transform: translate(900px, 0px);
+
 }
 .top img#mainFont-Left {
     width:100%;
-    transform: translateX(-550px);
+    transform: translate(-1000px, 20px);
 }
 .top img#mainBack{
     width:100%;
-    transform: translateY(-20px);
-}
+    overflow-x: hidden;
+    object-fit: cover;
 
+}
+ 
+@media (max-width: 1400px){
+    .top img#mainFont-Right{
+        width:150%;
+        transform: translate(70px, 0px);
+    
+    }
+    .top img#mainFont-Left {
+        width:150%;
+        transform: translate(250px, 50px);
+    }
+}
+@media (max-width: 1200px){
+    .top img#mainFont-Left {
+        width:200%;
+        transform: translate(-1200px, 100px);
+        }
+    .top img#mainFont-Right{
+        width:200%;
+        transform: translate(70px, 100px);
+    }
+}
 @media (max-width: 992px){
     .top img#mainFont-Left {
     width:200%;
-    transform: translateX(-950px);
+    transform: translate(-1050px, 100px);
     }
     .top img#mainFont-Right{
         width:200%;
-        transform: translateX(550px);
+        transform: translate(130px, 100px);
     }
     .top img#mainBack{
         width:100%;
-        transform: translateY(0px);
+    }
+    .top img#mainCloud{
+        width:200%;
+    
+    }
+}
+@media (max-width: 768px){
+    .top img#mainFont-Left {
+    width:200%;
+    transform: translate(-1050px, 100px);
+    }
+    .top img#mainFont-Right{
+        width:200%;
+        transform: translate(80px, 100px);
+    }
+    .top img#mainBack{
+        width:100%;
     }
     .top img#mainCloud{
         width:200%;
@@ -80,6 +133,14 @@ body{
     .logo{
         font-size: 70px;
     }
+    .top img#mainFont-Left {
+        width:300%;
+        transform: translate(-1150px, 150px);
+        }
+    .top img#mainFont-Right{
+        width:300%;
+        transform: translate(0px, 90px);
+    }
 }
 @media (max-width: 500px){
     .logo{
@@ -88,6 +149,29 @@ body{
         letter-spacing: 8px;
 
     }
+    .top img#mainFont-Left {
+        width:400%;
+        transform: translate(-1150px, 150px);
+        }
+    .top img#mainFont-Right{
+        width:400%;
+        transform: translate(-200px, 60px);
+    }
+
+
+}
+@media (max-width:400px){
+
+    .top img#mainFont-Left {
+        width:400%;
+        transform: translate(-1080px, 80px);
+        }
+    .top img#mainFont-Right{
+        width:400%;
+        transform: translate(-240px, 60px);
+    }
+
+
 }
 
 /* ----------------------------自介------------------------------ */
