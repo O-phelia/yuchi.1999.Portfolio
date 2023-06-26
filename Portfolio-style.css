@@ -325,7 +325,7 @@ body{
 }
 @media (min-width: 800px){
     .myself{
-        height:120vh;
+        height:250%;
         }
 }
 
@@ -338,7 +338,7 @@ body{
         margin-top: -30%;
 }
 .myself{
-    height:118vh;
+    height:230%;
     }
 }
 
@@ -353,10 +353,10 @@ body{
         width: 50%;
     }
     .myself{
-        height:105vh;
+        height:150%;
         }
 }
-@media (min-width: 1200px){
+@media (min-width: 1400px){
     .software{
         margin-top: 40px;
     }
@@ -386,21 +386,21 @@ body{
 }
  @media (max-width: 700px){
     .myself{
-        height:125vh;
+        height:260%;
     }
     .myself-top{
         display: block;
+        width: 100%;
     }
     .Yuchi{
     width: 100%;
     margin: auto;
     margin-left: 0px;
     /* background-color: #565555; */
-
     }
 
     .myself-top img{
-        width: 50%;
+        width: 40%;
     }
     .talkh4{
         display: none;
@@ -435,8 +435,12 @@ body{
     }
 }
 @media (max-width: 500px){
+    
+    .myself-top img{
+        width: 40%;
+    }
     .myself{
-    height: 160vh;
+    height: 300%;
     }
     .aboutme{
         display: block;
@@ -454,7 +458,7 @@ body{
         width: 100%;
     }
     .software{
-        margin-top: 30px;
+        margin-top: 50px;
         width: 70%;
     }
     .wrap2 h2{
@@ -467,17 +471,14 @@ body{
 
 }
 @media (max-width: 350px){
-    .myself{
-        height:170vh;
-        }
     .txt-con{
         width: 95%;
         margin: auto;
         margin-top: 50px;
     }
-     .myself .wrap{
+     /* .myself .wrap{
          background-color: #494949;
-     }
+     } */
 }
 
 
@@ -613,7 +614,7 @@ body{
 }
 
 /* oooooooooooooooooooo */
-@media (max-width: 1200px){
+@media (max-width: 1400px){
     .title{
         font-size: 92px;
     }
@@ -680,10 +681,8 @@ body{
 
 @media (max-width: 913px){
     .title{
-
         font-size: 65px;
         letter-spacing: 10px;
-
     }
     .work .txt h3{
         font-size: 16px;
