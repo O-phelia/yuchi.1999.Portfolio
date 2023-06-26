@@ -174,10 +174,14 @@ body{
 
 }
 
+
+
+
+
 /* ----------------------------自介------------------------------ */
 .myself{
     display: flex;
-    height:160vh;
+    height:110vh;
     width:  100%;
     background: linear-gradient(#681e4d,#0e070c);
 }
@@ -187,19 +191,26 @@ body{
     /* background-color: #8d8a8a; */
     z-index: 5;
 }
-.myself img{
-    width: 20%;
+.myself-top{
+    display: flex;
+    margin-top: -12%;
+    margin-bottom: 150px;
+    /* background-color: #8d8a8a; */
+
+}
+.myself-top img{
+    width: 50%;
 }
 .Yuchi{
-    width: 80%;
+    width: 35%;
     /* background-color: #565555; */
     margin: auto;
+    margin-left: -10px;
 }
 .Yuchi .pic{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -10%;
 }
 .Yuchi .txt{
     width: 100%;
@@ -208,35 +219,59 @@ body{
 }
 .Yuchi .txt h2{
     margin: auto;
+    padding-left: 4px;
     letter-spacing: 6px;
+    /* background-color: #565555; */
 
 }
-.Yuchi .txt h4{
+.talk{
+    width: 60%;
+    /* background-color: #565555; */
     margin: auto;
-    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: -15%;
+    letter-spacing: 4px;
+
+}
+.talk-1{
+
+    background-color: rgba(225, 225, 225, 0.6);
+    border-radius: 0px 15px 15px 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.talk-2{
+
+    background-color: rgba(225, 225, 225, 0.6);
+    border-radius: 0px 15px 15px 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.talk-3{
+    background-color: rgba(225, 225, 225, 0.6);
+    border-radius: 0px 20px 20px 20px;
+    padding: 15px;
+
+}
+.talk h4{
+    line-height: 24px;
+    width: 100%;
+    margin: auto;
+    color: #ffffff;
 }
 .wrap2{
     width: 100%;
     margin-top: 50px;
+}
+.wrap2 h2{
+    margin-bottom: 25px;
 }
 .txt-con{
     width: 50%;
     letter-spacing: 1px;
     line-height: 20px;
 }
-.talk{
-    width: 80%;
-    background-color: rgba(225, 225, 225, 0.6);
-    margin: 100px auto;
-    letter-spacing: 3px;
-    padding: 30px 15px;
-}
-.talk h4{
-    line-height: 30px;
-    width: 95%;
-    margin: auto;
-    color: #000000;
-}
+
 
 .aboutme{
     width: 80%;
@@ -248,16 +283,14 @@ body{
 .skill{
     width: 80%;
     /* background-color: #6b6a6a; */
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
 }
 
 .software{
     width: 80%;
     /* background-color: #6b6a6a; */
-    margin: auto;
-    margin-top: 50px;
+    margin: 20px auto;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -274,18 +307,136 @@ body{
 .myself h2{
     color: #fff;
     letter-spacing: 10px;
+    
 }
+/* ooooooooooooooooo */
+@media (min-width: 700px){
+    .talk{
+        margin-top: 40%;
+        
+    }
+    .myself-top{
+        margin-top: -40%;
+}
+.myself-top img{
+    width: 60%;
+}
+
+}
+@media (min-width: 800px){
+    .myself{
+        height:120vh;
+        }
+}
+
+@media (min-width: 900px){
+    .talk{
+        margin-top: 30%;
+        
+    }
+    .myself-top{
+        margin-top: -30%;
+}
+.myself{
+    height:118vh;
+    }
+}
+
+@media (min-width: 1200px){
+    .talk{
+        margin-top: 8%;
+    }
+    .myself-top{
+        margin-top: -15%;
+}
+    .myself-top img{
+        width: 50%;
+    }
+    .myself{
+        height:105vh;
+        }
+}
+@media (min-width: 1200px){
+    .software{
+        margin-top: 40px;
+    }
+}
+/* ooooooooooooooooooooooooooooooooooooo */
 @media (max-width: 800px){
+    .myself{
+        height:105vh;
+        }
+    .myself-top img{
+        width: 65%;
+    }
+    .myself-top{
+        margin-bottom: 8%;
+    }
+    .talk h4{
+        font-size: 14px;
+    }
     .txt-con h2{
         font-size: 20px;
     }
     .txt-con h3{
         font-size: 14px;
     }
+
+
+}
+ @media (max-width: 700px){
+    .myself{
+        height:125vh;
+    }
+    .myself-top{
+        display: block;
+    }
+    .Yuchi{
+    width: 100%;
+    margin: auto;
+    margin-left: 0px;
+    /* background-color: #565555; */
+
+    }
+
+    .myself-top img{
+        width: 50%;
+    }
+    .talkh4{
+        display: none;
+    }
+    .talk{
+    width: 75%;
+    /* background-color: #565555; */
+    margin: auto;
+    margin-top: 10%;
+    /* margin-left: 0%; */
+    letter-spacing: 4px;
+
+    }
+    .talk-1{
+    background-color: rgba(225, 225, 225, 0.6);
+    border-radius: 0px 18px 18px 18px;
+    padding:15px;
+    margin-bottom: 20px;
+    }
+    .talk-2{
+        background-color: rgba(225, 225, 225, 0.6);
+        border-radius: 0px 18px 18px 18px;
+        padding: 15px;
+        margin-bottom: 20px;
+
+    }
+    .talk-3{
+        background-color: rgba(225, 225, 225, 0.6);
+        border-radius: 0px 18px 18px 18px;
+        padding: 15px;
+
+    }
 }
 @media (max-width: 500px){
     .myself{
-    height:160vh;
+    height: 160vh;
     }
     .aboutme{
         display: block;
@@ -301,13 +452,37 @@ body{
     }
     .software img{
         width: 100%;
-        margin-top: 15px;
     }
     .software{
+        margin-top: 30px;
         width: 70%;
+    }
+    .wrap2 h2{
+        font-size: 18px;
+    }
+    .wrap2 h3{
+        line-height: 18px;
+        font-size: 14px;
     }
 
 }
+@media (max-width: 350px){
+    .myself{
+        height:170vh;
+        }
+    .txt-con{
+        width: 95%;
+        margin: auto;
+        margin-top: 50px;
+    }
+     .myself .wrap{
+         background-color: #494949;
+     }
+}
+
+
+
+
 /* ----------介紹區塊---------- */
 .work{
     overflow-x: hidden;
@@ -566,8 +741,9 @@ body{
 }
 @media (max-width: 450px){
     .title{
-        font-size: 55px;
+        font-size: 50px;
         left: 6%;
+        letter-spacing: 6px;
     }
     .work_bg{
         background-size:560px 340px; 
