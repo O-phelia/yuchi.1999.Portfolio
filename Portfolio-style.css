@@ -181,7 +181,7 @@ body{
 /* ----------------------------自介------------------------------ */
 .myself{
     display: flex;
-    height:110vh;
+    height:105%;
     width:  100%;
     background: linear-gradient(#681e4d,#0e070c);
 }
@@ -194,7 +194,7 @@ body{
 .myself-top{
     display: flex;
     margin-top: -12%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     /* background-color: #8d8a8a; */
 
 }
@@ -235,20 +235,20 @@ body{
 }
 .talk-1{
 
-    background-color: rgba(225, 225, 225, 0.6);
+    background-color: rgba(225, 225, 225, 0.4);
     border-radius: 0px 15px 15px 15px;
     padding: 15px;
     margin-bottom: 15px;
 }
 .talk-2{
 
-    background-color: rgba(225, 225, 225, 0.6);
+    background-color: rgba(225, 225, 225, 0.2);
     border-radius: 0px 15px 15px 15px;
     padding: 15px;
     margin-bottom: 15px;
 }
 .talk-3{
-    background-color: rgba(225, 225, 225, 0.6);
+    background-color: rgba(225, 225, 225, 0.4);
     border-radius: 0px 20px 20px 20px;
     padding: 15px;
 
@@ -263,32 +263,36 @@ body{
     width: 100%;
     margin-top: 50px;
 }
-.wrap2 h2{
-    margin-bottom: 25px;
-}
-.txt-con{
-    width: 50%;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
 
 
 .aboutme{
     width: 80%;
     /* background-color: #aaa9a9; */
     margin: auto;
-    margin-top: 50px;
     display: flex;
 }
+.aboutme .txt1{
+    width: 40%;
+    margin-right:15px;
+}
+.aboutme .txt2{
+    width: 30%;
+    margin-right:5px;
+}
+.aboutme .txt3{
+    width: 30%;
+}
+
+
 .skill{
     width: 80%;
     /* background-color: #6b6a6a; */
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
 }
 
 .software{
-    width: 80%;
+    width: 70%;
     /* background-color: #6b6a6a; */
     margin: 20px auto;
     border-radius: 20px;
@@ -297,30 +301,40 @@ body{
 .software img{
     width: 50%;
 }
-.myself h3{
-    margin-left: 20px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-weight: 400;
 
-}
 .myself h2{
     color: #fff;
     letter-spacing: 10px;
     
 }
+.txt-con{
+    width: 100%;
+    /* background-color: #684c4c; */
+}
+.myself h3{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.myself p{
+    /* margin-left: 20px; */
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+}
 /* ooooooooooooooooo */
 @media (min-width: 700px){
     .talk{
         margin-top: 40%;
-        
     }
     .myself-top{
         margin-top: -40%;
-}
-.myself-top img{
-    width: 60%;
-}
+    }
+    .myself-top img{
+        width: 60%;
+    }
 
 }
 @media (min-width: 800px){
@@ -336,10 +350,10 @@ body{
     }
     .myself-top{
         margin-top: -30%;
-}
-.myself{
-    height:230%;
     }
+    .myself{
+        height:230%;
+        }
 }
 
 @media (min-width: 1200px){
@@ -362,9 +376,21 @@ body{
     }
 }
 /* ooooooooooooooooooooooooooooooooooooo */
-@media (max-width: 800px){
+ @media (max-width: 1100px){
+     .software{
+        width: 90%;
+    }
+    .aboutme{
+        width: 90%;
+    }
+    .skill{
+        width: 90%;
+    }
+
+}
+@media (max-width: 850px){
     .myself{
-        height:105vh;
+        height:280%;
         }
     .myself-top img{
         width: 65%;
@@ -372,19 +398,43 @@ body{
     .myself-top{
         margin-bottom: 8%;
     }
-    .talk h4{
+    .myself h3{
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+    .myself p{
+        letter-spacing: 3px;
         font-size: 14px;
+        line-height: 22px;
     }
-    .txt-con h2{
-        font-size: 20px;
+    .skill .txt2{
+        margin-left: 16px;
     }
-    .txt-con h3{
-        font-size: 14px;
+    .aboutme .txt2{
+        margin-left: 5px;
     }
-
 
 }
- @media (max-width: 700px){
+ @media (max-width: 768px){
+
+     .software{
+         width: 80%;
+    }
+    .skill .txt1{
+        margin-right: 20px;
+    }
+    .aboutme .txt1{
+        width: 34%;
+        margin-right:5px;
+        /* background-color: #8b0e0e; */
+    }
+    .aboutme .txt2{
+        width: 32%;
+        margin-right:5px;
+    }
+    .aboutme .txt3{
+        width: 34%;
+    }
     .myself{
         height:260%;
     }
@@ -406,36 +456,31 @@ body{
         display: none;
     }
     .talk{
-    width: 75%;
-    /* background-color: #565555; */
-    margin: auto;
-    margin-top: 10%;
-    /* margin-left: 0%; */
-    letter-spacing: 4px;
-
+        width: 75%;
+        /* background-color: #565555; */
+        margin: auto;
+        margin-top: 10%;
+        letter-spacing: 4px;
     }
     .talk-1{
-    background-color: rgba(225, 225, 225, 0.6);
-    border-radius: 0px 18px 18px 18px;
-    padding:15px;
-    margin-bottom: 20px;
+        border-radius: 0px 18px 18px 18px;
+        padding:15px;
+        margin-bottom: 20px;
     }
     .talk-2{
-        background-color: rgba(225, 225, 225, 0.6);
         border-radius: 0px 18px 18px 18px;
         padding: 15px;
         margin-bottom: 20px;
-
     }
     .talk-3{
-        background-color: rgba(225, 225, 225, 0.6);
         border-radius: 0px 18px 18px 18px;
         padding: 15px;
-
     }
 }
-@media (max-width: 500px){
-    
+@media (max-width: 600px){
+    .wrap2{
+        margin-top: 100px;
+    }
     .myself-top img{
         width: 40%;
     }
@@ -445,29 +490,41 @@ body{
     .aboutme{
         display: block;
     }
-    .skill{
-        display: block;
-        
-    }
-    .txt-con{
-        width: 70%;
+    .skill .txt-con{
+        width: 80%;
         margin: auto;
         margin-top: 50px;
     }
+    .aboutme .txt1{
+        width:80%;
+        margin:auto;
+        margin-bottom: 48px;
+    }
+    .aboutme .txt2{
+        width:80%;
+        margin:auto;
+        margin-bottom: 48px;
+    }
+    .aboutme .txt3{
+        width:80%;
+        margin:auto;
+        margin-bottom: 48px;
+    }
+    .skill{
+        display: block;
+    }
+    .skill .txt1{
+        margin:auto;
+    }
+    
     .software img{
         width: 100%;
     }
     .software{
         margin-top: 50px;
-        width: 70%;
+        width: 80%;
     }
-    .wrap2 h2{
-        font-size: 18px;
-    }
-    .wrap2 h3{
-        line-height: 18px;
-        font-size: 14px;
-    }
+
 
 }
 @media (max-width: 350px){
@@ -640,8 +697,6 @@ body{
 @media (max-width: 1200px){
     .title{
         font-size: 90px;
-
-        
     }
 
     .work .txt h3{
