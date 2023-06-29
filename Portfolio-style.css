@@ -59,13 +59,13 @@ body{
 
 }
 .top img#mainFont-Right{
-    width:100%;
-    transform: translate(900px, 0px);
+    width:120%;
+    transform: translate(500px, 0px);
 
 }
 .top img#mainFont-Left {
     width:100%;
-    transform: translate(-1000px, 20px);
+    transform: translate(-800px, 20px);
 }
 .top img#mainBack{
     width:100%;
@@ -77,12 +77,12 @@ body{
 @media (max-width: 1400px){
     .top img#mainFont-Right{
         width:150%;
-        transform: translate(70px, 0px);
+        transform: translate(90px, 0px);
     
     }
     .top img#mainFont-Left {
         width:150%;
-        transform: translate(250px, 50px);
+        transform: translate(-900px, 50px);
     }
 }
 @media (max-width: 1200px){
@@ -115,10 +115,10 @@ body{
 @media (max-width: 768px){
     .top img#mainFont-Left {
     width:200%;
-    transform: translate(-1050px, 100px);
+    transform: translate(-900px, 100px);
     }
     .top img#mainFont-Right{
-        width:200%;
+        width:230%;
         transform: translate(80px, 100px);
     }
     .top img#mainBack{
@@ -135,11 +135,11 @@ body{
     }
     .top img#mainFont-Left {
         width:300%;
-        transform: translate(-1150px, 150px);
+        transform: translate(-1050px, 150px);
         }
     .top img#mainFont-Right{
         width:300%;
-        transform: translate(0px, 90px);
+        transform: translate(-100px, 90px);
     }
 }
 @media (max-width: 500px){
@@ -163,12 +163,12 @@ body{
 @media (max-width:400px){
 
     .top img#mainFont-Left {
-        width:400%;
+        width:300%;
         transform: translate(-1080px, 80px);
         }
     .top img#mainFont-Right{
         width:400%;
-        transform: translate(-240px, 60px);
+        transform: translate(-240px, 100px);
     }
 
 
@@ -198,9 +198,7 @@ body{
     /* background-color: #8d8a8a; */
 
 }
-.myself-top img{
-    width: 50%;
-}
+
 .Yuchi{
     width: 35%;
     /* background-color: #565555; */
@@ -208,12 +206,20 @@ body{
     margin-left: -10px;
 }
 .Yuchi .pic{
-    width: 100%;
+    width: 70%;
+    margin: auto;
     display: flex;
     justify-content: center;
+    
 }
+.Yuchi .pic img{
+    border-radius: 50%;
+    box-shadow: 7px 7px 4px rgba(20, 20, 20, 0.4);
+}
+
 .Yuchi .txt{
     width: 100%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -233,15 +239,17 @@ body{
     letter-spacing: 4px;
 
 }
-.talk-1{
 
+.talk-1{
+    width: fit-content;
     background-color: rgba(225, 225, 225, 0.4);
     border-radius: 0px 15px 15px 15px;
     padding: 15px;
     margin-bottom: 15px;
 }
-.talk-2{
 
+.talk-2{
+    width: fit-content;
     background-color: rgba(225, 225, 225, 0.2);
     border-radius: 0px 15px 15px 15px;
     padding: 15px;
@@ -290,9 +298,12 @@ body{
     margin: 30px auto;
     display: flex;
 }
+.skill br{
+    display: none;
+}
 
 .software{
-    width: 70%;
+    width: 60%;
     /* background-color: #6b6a6a; */
     margin: 20px auto;
     border-radius: 20px;
@@ -332,10 +343,9 @@ body{
     .myself-top{
         margin-top: -40%;
     }
-    .myself-top img{
-        width: 60%;
+        .myself-top img{
+        width: 70%;
     }
-
 }
 @media (min-width: 800px){
     .myself{
@@ -348,6 +358,7 @@ body{
         margin-top: 30%;
         
     }
+
     .myself-top{
         margin-top: -30%;
     }
@@ -360,6 +371,7 @@ body{
     .talk{
         margin-top: 8%;
     }
+
     .myself-top{
         margin-top: -15%;
 }
@@ -374,6 +386,7 @@ body{
     .software{
         margin-top: 40px;
     }
+
 }
 /* ooooooooooooooooooooooooooooooooooooo */
  @media (max-width: 1100px){
@@ -387,14 +400,13 @@ body{
         width: 90%;
     }
 
+
 }
 @media (max-width: 850px){
     .myself{
         height:280%;
         }
-    .myself-top img{
-        width: 65%;
-    }
+
     .myself-top{
         margin-bottom: 8%;
     }
@@ -407,6 +419,9 @@ body{
         font-size: 14px;
         line-height: 22px;
     }
+    .skill br{
+        display: block;
+    }
     .skill .txt2{
         margin-left: 16px;
     }
@@ -415,7 +430,7 @@ body{
     }
 
 }
- @media (max-width: 768px){
+ @media (max-width: 700px){
 
      .software{
          width: 80%;
@@ -441,6 +456,7 @@ body{
     .myself-top{
         display: block;
         width: 100%;
+        margin-top:-10% ;
     }
     .Yuchi{
     width: 100%;
@@ -477,12 +493,12 @@ body{
         padding: 15px;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 576px){
     .wrap2{
         margin-top: 100px;
     }
     .myself-top img{
-        width: 40%;
+        width: 55%;
     }
     .myself{
     height: 300%;
@@ -526,6 +542,15 @@ body{
     }
 
 
+}
+@media (max-width: 450px){
+    .myself h3{
+        font-size: 18px;
+    }
+    .myself p{
+        font-size: 12px;
+
+    }
 }
 @media (max-width: 350px){
     .txt-con{
@@ -773,18 +798,16 @@ body{
  @media (max-width: 576px){
     .work_bg{
         height: 60vh;
+        background-size:576px 350px; 
 }
     .introduce{
         height: 40vh;
     }
     .title{
-        font-size: 70px;
+        font-size: 78px;
         position: absolute;
         bottom: 5%;
         left: 10%;
-    }
-    .work_bg{
-        background-size:576px 350px; 
     }
     .work .txt h3{
         font-size: 18px;
@@ -795,7 +818,7 @@ body{
 }
 @media (max-width: 450px){
     .title{
-        font-size: 50px;
+        font-size: 60px;
         left: 6%;
         letter-spacing: 6px;
     }
@@ -827,7 +850,11 @@ body{
     }
     
 }
-
+@media (max-width: 350px){
+    .title{
+        font-size: 45px;
+    }
+}
 
 
 
