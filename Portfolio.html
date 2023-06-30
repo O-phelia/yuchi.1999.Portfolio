@@ -8,12 +8,63 @@
     <link rel="stylesheet" href="./animate.min.css">
     <link rel="stylesheet" href="./Portfolio-style.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./loading.css">
     <link rel="stylesheet" href="./navbar-btn-footer-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Ubuntu:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- loading -->
+<div id="preloader">
+    <div id="status">
 
+            <div class="logo_name">
+                    <h1 class="logoTitle">YUCHI.<br>PORTFO</h1>
+                    
+            </div>
+            <div class="blur">
+                <h3>OOO</h3>
+            </div>
+            <div class="blur2">
+                <h3>O</h3>
+            </div>
+            <div class="loading">
+                    <p>Loading <span class = "dots">...</span></p>
+                    
+                    <!-- <h5 class="blur2">O</h5> -->
+            </div>
+                                
+            <div class="ingredient">
+                    <div class="content1">
+                        <h2>WEB INGREDIENT </h2><p>▂</p>
+                        <h4>serving size <span>5/5 page(???mb)</span></h4>
+                    </div>
+            <hr>
+                    <div class="Composition"> 
+                        <p>Composition(%)</p>
+                    </div> 
+            <hr>
+                    <div class="content2">
+                        <p>About <span>5%</span></p>
+                        <p>Experience<span>5%</span></p>
+                        <p>Web Design<span>25%</span></p>
+                        <p>Business Design<span>25%</span></p>
+                        <p>Graphic Design<span>25%</span></p>
+                        <p>Other<span>15%</span></p>
+                    </div>
+            <hr>
+                    <div class="content3">
+                        <p>The website contains a large number of images,so it may take some time for them to load.</p>
+                    </div>
+            <hr>
+                    <div class="content4">
+                        <p>▂ Design by YU - CHI ( 2023.07.01 )  </p>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<!-- top -->
     <section class="main-top">
         <div class="Logo">
             <a href="./Portfolio.html" class="logo wow animate__animated animate__flipInY"data-wow-duration="1.2s">YUCHI.<br>PORTFO</a>
@@ -187,7 +238,20 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+// loading
+
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $("#status").fadeOut();
+                $("#preloader").delay(350).fadeOut("slow");
+            }, 2000); // 添加2000毫秒的延迟
+        });
+    </script>
+
     <script src="./wow.min.js"></script>
+
     <script>
         new WOW().init();
     </script>

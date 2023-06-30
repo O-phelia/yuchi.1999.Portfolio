@@ -8,6 +8,7 @@ body{
 }
 
 
+
 /* ----------main-top---------- */
 .main-top{
     position: relative;
@@ -780,10 +781,10 @@ body{
 }
 @media (max-width: 740px){
     .title{
-        font-size: 90px;
-        position: absolute;
+        font-size: 55px;
+        /* position: absolute;
         bottom: 5%;
-        left: 10%;
+        left: 6%; */
 
     }
     .work_bg{
@@ -795,19 +796,19 @@ body{
     }
 }
 
- @media (max-width: 576px){
+ @media (max-width: 600px){
     .work_bg{
         height: 60vh;
         background-size:576px 350px; 
-}
+    }
     .introduce{
         height: 40vh;
     }
     .title{
-        font-size: 78px;
+        font-size: 85px;
         position: absolute;
         bottom: 5%;
-        left: 10%;
+        left: 5%;
     }
     .work .txt h3{
         font-size: 18px;
@@ -818,8 +819,8 @@ body{
 }
 @media (max-width: 450px){
     .title{
-        font-size: 60px;
-        left: 6%;
+        font-size: 70px;
+        left:5%;
         letter-spacing: 6px;
     }
     .work_bg{
@@ -852,7 +853,7 @@ body{
 }
 @media (max-width: 350px){
     .title{
-        font-size: 45px;
+        font-size:55px;
     }
 }
 

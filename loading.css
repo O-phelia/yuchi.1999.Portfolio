@@ -1,0 +1,239 @@
+/* ----------loading---------- */
+
+#preloader {/*   這是整個會蓋住畫面的底色色塊  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #5a4e4e;
+    z-index: 9999;
+    overflow: hidden;
+}
+.logo_name{
+    /* filter: contrast(5); */
+    background-color: #fff;
+}
+
+.blur2{
+    font-size: 90px;
+    color: rgb(255, 0, 162);
+    transform: scale(4);
+    position: absolute;
+    top: 60%;
+    right: -20px;
+    filter: blur(8px);
+    opacity: 0.8;
+    transition: all 2s ease-in-out;
+}
+
+/* logo */
+.logoTitle{
+    position: absolute;
+    right: 15%;
+    top: 0;
+    font-size: 90px;
+    font-weight: 900;
+    color: rgb(255, 0, 162);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: lettermove 3s infinite alternate ease-in-out;
+    white-space: nowrap;
+}
+/* loading */
+.loading {
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.dots{
+    display: inline-block;
+    font-size: 20px;
+    width: 5px;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation: dots 1.5s linear infinite;
+    transition: 1;
+}
+.blur{
+    transform: scale(10);
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: rgb(255, 0, 162);
+    letter-spacing: -5rem;
+    animation: blurshiny 2s infinite alternate ease-in-out;
+}
+@keyframes dots{
+    from{
+        width: 0px;
+    }
+		
+	to {
+        width: 30px;
+    }
+}
+@keyframes lettermove{
+    0%{
+        letter-spacing: -3.5rem;
+        filter: blur(20px);
+    }
+    100%{
+        letter-spacing: 0.5rem;
+        filter: blur(0px);
+        
+    }
+}
+@keyframes blurshiny{
+    0%{
+        filter: blur(7px);
+        opacity: 0.6;
+    }
+    100%{
+        filter: blur(5px);
+        opacity: 1;
+    }
+}
+.ingredient{
+    width: 32%;
+    position: absolute;
+    left: 12%;
+    bottom: 7%;
+    opacity: 0.7;
+    padding: 15px;
+    transition: all 1s ease-in-out;
+}
+
+.content1,.content2,.content3,.content4,.Composition p{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+.Composition{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.Composition p{
+    width: fit-content;
+    margin-left: auto;
+    transform: translateY(3px);
+}
+.content1 h2{
+    line-height: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 80px;
+}
+.content1 span{
+    float: right;
+}
+.content2{
+    transform: translateY(10px);
+    line-height: 10px;
+    margin-bottom: 25px;
+}
+.content2 span{
+    float: right;
+}
+.content3 p{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* ooooooooooooooooooooooooooooooooooo */
+@media (min-width: 1200px){
+    .ingredient:hover{
+        background-color: rgba(191, 149, 149, 0.2);
+        border-radius:30px;
+    }
+}
+@media (max-width: 1100px){
+    .content1,.content2,.content3,.content4,.Composition p{
+        font-size: 12px;
+    }
+    .content4 p{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .logoTitle{
+        right: 12%;
+        font-size: 70px;
+        animation: lettermove1100 3s infinite alternate ease-in-out;
+    }
+    .loading {
+        right: 10%;
+    }
+
+    .ingredient{
+        width: 43%;
+
+    }
+    .blur2{
+        font-size: 60px;
+        transform: scale(3);
+    }
+}
+@media (max-width: 600px){
+
+    .ingredient{
+        left: 2%;
+        bottom:15%;
+        width: 55%;
+        transform: scale(0.85);
+    }
+    
+    .loading {
+        left: 10%;
+        bottom: 6%;
+        font-size: 25px;
+    }
+    .content1 h2{
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+        
+    }
+    .logoTitle{
+        right: 15%;
+        font-size: 50px;
+        animation: lettermove600 3s infinite alternate ease-in-out;
+    }
+}
+@media (max-width: 400px){
+
+    .ingredient{
+        width: 70%;
+
+    }
+}
+
+
+@keyframes lettermove1100{
+    0%{
+        letter-spacing: -2.7rem;
+        filter: blur(20px);
+    }
+    100%{
+        letter-spacing: 0.5rem;
+        filter: blur(0px);
+        
+    }
+}
+@keyframes lettermove600{
+    0%{
+        letter-spacing: -2rem;
+        filter: blur(10px);
+    }
+    100%{
+        letter-spacing: 0.5rem;
+        filter: blur(0px);
+        
+    }
+}
