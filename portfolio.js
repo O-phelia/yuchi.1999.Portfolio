@@ -13,7 +13,6 @@ window.addEventListener('scroll', function(){
 
 
 
-
 // 預設滾輪原始樣式
 var originalOverflowStyle = document.body.style.overflow;
 
@@ -35,8 +34,13 @@ window.addEventListener('load', function() {
             preloader.style.transition = 'opacity 0.5s';
             preloader.style.opacity = '0';
 
+            // 延遲 0.5 秒後移除 #preloader
+            setTimeout(function() {
+                preloader.parentNode.removeChild(preloader);
+            }, 500);
+            
             // 恢復滾輪原始樣式
             document.body.style.overflow = originalOverflowStyle;
         }
-    }, 2300); // 延遲 2300 毫秒
+    }, 2300); // 延遲 2000 毫秒
 });

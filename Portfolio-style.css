@@ -165,11 +165,11 @@ body{
 
     .top img#mainFont-Left {
         width:300%;
-        transform: translate(-1080px, 80px);
+        transform: translate(-980px, 80px);
         }
     .top img#mainFont-Right{
         width:400%;
-        transform: translate(-240px, 100px);
+        transform: translate(-90px, 100px);
     }
 
 
@@ -198,6 +198,9 @@ body{
     margin-bottom: 100px;
     /* background-color: #8d8a8a; */
 
+}
+.myself-top h4{
+    font-weight: 400;
 }
 
 .Yuchi{
@@ -823,6 +826,10 @@ body{
         left:5%;
         letter-spacing: 6px;
     }
+    .business{
+        font-size: 65px;
+
+    }
     .work_bg{
         background-size:560px 340px; 
     }
@@ -855,6 +862,11 @@ body{
     .title{
         font-size:55px;
     }
+    .business{
+        font-size: 50px;
+
+    }
+
 }
 
 
