@@ -1,14 +1,15 @@
 /* ----------loading---------- */
 
 #preloader {/*   這是整個會蓋住畫面的底色色塊  */
+    overflow: hidden;
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     left: 0%;
     top: 0%;
     background-color: #5a4e4e;
     z-index: 9999;
-    overflow: hidden;
+
 }
 .logo_name{
     /* filter: contrast(5); */
@@ -37,7 +38,7 @@
     color: rgb(255, 0, 162);
     letter-spacing: 3px;
     text-transform: uppercase;
-    animation: lettermove 3s infinite alternate ease-in-out;
+    animation: lettermove 2s infinite alternate ease-in-out;
     white-space: nowrap;
 }
 /* loading */
@@ -66,7 +67,7 @@
     left: 5%;
     color: rgb(255, 0, 162);
     letter-spacing: -5rem;
-    animation: blurshiny 2s infinite alternate ease-in-out;
+    animation: blurshiny 1.5s infinite alternate ease-in-out;
 }
 @keyframes dots{
     from{
@@ -188,7 +189,7 @@
         width: 55%;
         transform: scale(0.85);
     }
-    
+
     .loading {
         left: 10%;
         bottom: 6%;
@@ -205,12 +206,35 @@
         font-size: 50px;
         animation: lettermove600 3s infinite alternate ease-in-out;
     }
+    .content1 h4{
+        font-size: 11px;
+
+    }
+    
+}
+@media (max-width: 500px){
+    .content1 h4{
+        font-size: 12px;
+
+    }
+
 }
 @media (max-width: 400px){
-
     .ingredient{
         width: 70%;
+    }
 
+
+    .content1 span{
+        font-size:8px;
+
+    }
+    .content1,.content2,.content3,.content4,.Composition p{
+        font-size: 10px;
+    }
+    .content4 p{
+        font-size: 9px;
+        letter-spacing: 1px;
     }
 }
 

@@ -30,8 +30,6 @@
             </div>
             <div class="loading">
                     <p>Loading <span class = "dots">...</span></p>
-                    
-                    <!-- <h5 class="blur2">O</h5> -->
             </div>
                                 
             <div class="ingredient">
@@ -67,7 +65,7 @@
 <!-- top -->
     <section class="main-top">
         <div class="Logo">
-            <a href="./Portfolio.html" class="logo wow animate__animated animate__flipInY"data-wow-duration="1.2s">YUCHI.<br>PORTFO</a>
+            <a href="./Portfolio.html" class="logo wow animate__animated animate__flipInY"data-wow-duration="1.2s" data-wow-delay="2.5s">YUCHI.<br>PORTFO</a>
 
         </div>
         <div class="top">
@@ -238,23 +236,14 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script>
-// loading
-
-        $(window).on('load', function() {
-            setTimeout(function() {
-                $("#status").fadeOut();
-                $("#preloader").delay(350).fadeOut("slow");
-            }, 2000); // 添加2000毫秒的延迟
-        });
-    </script>
 
     <script src="./wow.min.js"></script>
 
     <script>
         new WOW().init();
     </script>
+
+
     <script src="./portfolio.js"></script>
     <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>
 </body>
