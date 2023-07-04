@@ -62,7 +62,7 @@
 .blur{
     transform: scale(10);
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 5%;
     color: rgb(255, 0, 162);
     letter-spacing: -5rem;
