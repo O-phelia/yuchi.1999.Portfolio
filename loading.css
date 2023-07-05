@@ -62,8 +62,8 @@
 .blur{
     transform: scale(10);
     position: absolute;
-    top: 30%;
-    left: 5%;
+    top: 25%;
+    left: 10%;
     color: rgb(255, 0, 162);
     letter-spacing: -5rem;
     animation: blurshiny 1.5s infinite alternate ease-in-out;

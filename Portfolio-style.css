@@ -105,9 +105,9 @@ body{
         width:200%;
         transform: translate(130px, 100px);
     }
-    .top img#mainBack{
+    /* .top img#mainBack{
         width:100%;
-    }
+    } */
     .top img#mainCloud{
         width:200%;
     
@@ -122,9 +122,9 @@ body{
         width:230%;
         transform: translate(80px, 100px);
     }
-    .top img#mainBack{
+    /* .top img#mainBack{
         width:100%;
-    }
+    } */
     .top img#mainCloud{
         width:200%;
     
@@ -509,6 +509,9 @@ body{
     .aboutme{
         display: block;
     }
+    .line{
+        display: none;
+    }
     .skill .txt-con{
         width: 80%;
         margin: auto;
@@ -679,6 +682,13 @@ body{
     color: rgb(35, 35, 35);
     font-weight: 600;
 
+}
+.line{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    opacity: 0.2;
+    transition: all 0.5s ease;
 }
 @keyframes wave{
     0%{

@@ -1,0 +1,1611 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden; 
+    /* overflow-y: hidden; */
+    width: 100%;
+}    /* 覆寫 Bootstrap 的 modal-open padding */
+body.modal-open {
+    padding-right: 0 !important; 
+}
+
+
+body{
+    padding: 0px;
+    background-image: url(./img/BODY底圖.png);
+}
+body .backTop{
+    z-index: 10;
+    transform: scale(3);
+    position: fixed;
+    bottom: 5%;
+    right: 6%;
+    background-color: #671717;
+    border-radius: 15px;
+    box-shadow:0px 1px 5px #5d0c0c;
+    opacity: 0.8;
+}
+body .backTop:hover{
+    opacity: 1;
+}
+body .backTop:active{
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    body{
+        background-image: url(./img/未命名-1.png);
+    }
+    
+}
+
+#preloader {/*   這是整個會蓋住畫面的底色色塊  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #a92626;
+    z-index: 9999;
+    overflow: hidden;
+}
+  #status {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#status .loading{
+    transform: scale(0.7);
+
+}
+
+#status h2{
+    margin-left: 25px;
+    margin-top: -40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+#status p{
+    margin-left: 25px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: #ffffff;
+
+}
+.kkdonutlogo{
+    position: absolute; 
+    right: 10px;
+    bottom: -30px;
+    transform: scale(2) rotate(-35deg);
+}
+
+/* ------------------------- 蓋板廣告 ------------------------- */
+/* 平板768px */
+/* #myModal .modal-open {
+    overflow: hidden;
+    padding-right: 0px;
+} */
+
+/* .modal {
+    overflow-y: auto !important;
+} */
+/* .modal::-webkit-scrollbar{
+    display: none;
+} */
+
+/* .myModal.modal.fade.show{
+    -ms-overflow-style:none; overflow:-moz-scrollbars-none; 
+    
+}
+.myModal.modal.fade.show::-webkit-scrollbar{width:0px} */
+/* .modal-backdrop.fade.show{
+    -ms-overflow-style:none; overflow:-moz-scrollbars-none;
+}
+.modal-backdrop.fade.show::-webkit-scrollbar{width:0px} */
+
+
+
+
+#myModal .modal-content{
+    width: 80%;
+    margin: auto;
+}
+.DM{
+    width: 100%;
+    margin: auto;
+}
+
+.DM-sm {
+    width:100%;
+    position: relative;
+    margin: auto;
+
+}
+.DM button{
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    border: none;
+    z-index: 5;
+    background-color: rgba(225, 225, 225, 0)
+
+}
+.DM button span{
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    margin: auto;
+    letter-spacing: 2px;
+}
+.DM-bg{
+    display: none;
+    margin: auto;
+
+}
+.DM-mi{
+    display: none;
+    width: 100%;
+    margin: auto;
+
+}
+@media (min-width: 576px){
+    .modal{
+        margin: 0rem;
+    }
+}
+@media (max-width: 767px){
+    /* 手機橫 */
+    .DM-mi{
+        display: block;
+
+    }
+    .DM-sm{
+        display: none;
+    
+    }
+    .DM button span{
+        font-size: 14px;
+    }
+    .DM button{
+        width: 100%;
+        bottom: -30px;
+}
+    .DM{
+        width: 100%;
+        height:90%;
+    }
+
+@media (max-width: 654px){
+    /* 特殊裝置 */
+    .DM-mi{
+        display: block;
+        width: 100%;
+    }
+    .DM-sm{
+        display: none;
+    }
+    .DM{
+        width: 100%;
+    }
+    .modal-dialog{
+        width: 50%;
+    }
+    .DM button span{
+        font-size: 14px;
+    }
+}
+}
+@media (max-width: 550px){
+    /* 手機直2 */
+    .DM-sm{
+        display: block;
+        width: 100%;
+    }
+    .DM-mi{
+        display: none;
+    }
+
+    .DM{
+        width: 100%;
+    }
+    .DM button{
+        width: 100%;
+    }
+    .modal-dialog{
+        width: 85%;
+    }
+}
+
+@media (max-width: 490px){
+    /* 手機直1 */
+
+    .DM{
+        width: 100%;
+        height:70%;
+    }
+    .DM-sm {
+        width: 100%;
+    }
+    .DM button{
+        bottom: -40px;
+}
+}
+/* ////  */
+@media (min-width: 840px){
+
+    .DM-mi{
+        display: block;
+        width: 100%;
+    }
+    .DM-sm{
+        display: none;
+    }
+    .DM-bg{
+        display: none;
+    }
+    .DM{
+        width: 100%;
+        height:70%;
+    }
+    .DM button{
+        width: 100%;
+        bottom: -40px;
+    }
+    .DM button span{
+        font-size: 14px;
+    }
+}
+@media (min-width: 912px){
+
+    .DM-mi{
+        display: none;
+    }
+    .DM-sm{
+        display: none;
+    }
+    .DM-bg{
+        display: block;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .DM{
+        width: 100%;
+    }
+    .DM button{
+        width: 100%;
+        bottom: -90px;
+    }
+    .DM button span{
+        font-size: 14px;
+    }
+}
+@media (min-width: 914px){
+
+    .DM-mi{
+        display: block;
+        width: 100%;
+    }
+    .DM-sm{
+        display: none;
+    }
+    .DM-bg{
+        display: none;
+    }
+    .DM{
+        width: 100%;
+        height:70%;
+    }
+    .DM button{
+        width: 100%;
+        bottom: -40px;
+    }
+    .DM button span{
+        font-size: 14px;
+    }
+}
+@media (min-width: 1000px){
+
+    .DM-mi{
+        display: block;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .DM-sm{
+        display: none;
+    }
+    .DM-bg{
+        display: none;
+    }
+    .DM{
+        width: 100%;
+    }
+    .DM button{
+        width: 100%;
+        bottom: -100px;
+        /* background-color: #fff; */
+    }
+    .DM button span{
+        font-size: 15px;
+    }
+}
+@media (min-width: 1200px){
+
+    .DM-mi{
+        display: block;
+        width: 100%;
+    }
+    .DM-sm{
+        display: none;
+    }
+    .DM-bg{
+        display: none;
+    }
+    .DM{
+        width: 100%;
+    }
+    #myModal .modal-content{
+        transform: scale(1.5);
+        background-color: #fff;
+
+    }
+    .DM button{
+        width: 100%;
+        bottom: -100px;
+        /* background-color: #fff; */
+    }
+    .DM button span{
+        font-size: 14px;
+    }
+}
+
+
+/* ----------------loading畫面^ Header-start----------------------- */
+
+.header .pic img{
+    display: block;
+    width: 100px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.header .pic{
+    width: 100%;
+}
+
+.header{
+    margin: 0;
+    border: none;
+    height: auto;
+}
+.header-top{
+    background-color: #a92626;
+    margin:0 -10px;
+    width: 110%;
+    height: 60px;
+    margin-bottom: -15px;
+}
+.header #menu-toggler{
+    display: none;
+}
+.header .fa-bars{
+    transform: scale(1.5);
+    color: #ffffff;
+    position: absolute;
+    right: 30px;top: 30px;
+    
+}
+.fa-user{
+    transform: scale(1.3);
+    position: absolute;
+    right: 75px;top: 30px;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+
+nav hr{
+    margin-top: 15px;
+    color: rgb(177, 96, 96);
+    border:dotted 6px rgb(192, 118, 118) ;
+}
+nav h4{
+    color: rgb(177, 96, 96);
+    text-align: center;
+    margin-top: 22px;
+    font-size: 15px;
+}
+.navbar{
+    
+    display:block;
+    background-color: #831d1d;
+    position: absolute;
+    /* top: 58px; */
+    left: -20px;
+    width: 106%;
+    height: 400px;
+    transition: 0.4s ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+nav a{
+    
+    text-decoration:none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    transition: 0.1s ease-in;
+    
+}
+#menu-toggler:checked ~ .navbar{
+    overflow: auto;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+nav a:active{
+    background-color: #b13a3a;
+}
+
+/* 光箱 */
+#exampleModalLogin .modal-content{
+    width: 80%;
+    height: 150%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#box{
+    display: inline-block;
+
+}
+
+#exampleModalLogin .modal-header h1{
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 10%;
+    color: #eea557;
+}
+.modal-body{
+    width: 100%;
+    margin: auto;
+    background-color:rgba(174, 174, 174, 0.2);
+    
+}
+#exampleModalLogin .modal-body h5{
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 5px;
+}
+#exampleModalLogin .modal-body-content{
+    display: block;
+    margin-left: 10%;
+    width: 100%;
+}
+#exampleModalLogin .modal-body h3{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+#exampleModalLogin .btn-close{
+    margin-top: -9%;
+    margin-right: 1px;
+}
+#text{
+    padding:7px 20px;
+    font-size: 14px;
+    width: 80%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: #a3988d;
+    border:none;
+    color:rgb(255, 255, 255);
+}
+#password{
+    padding:7px 20px;
+    font-size: 14px;
+    width: 80%;
+    height: 20%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #a3988d;
+    border:none;
+    color:rgb(255, 255, 255);
+}
+.btn-secondary{
+    background-color: #eea557;
+    width: 50px;
+    height: 25%;
+    font-size: 15px;
+
+    border:none;
+
+}
+.btn-primary{
+    background-color: #d6af86;
+    width: 50px;
+    height: 25%;
+    font-size: 15px;
+    border:none;
+
+}
+.btn-primary:hover{
+    background-color: #dc6755;
+
+}
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooo */
+@media (max-width: 991px){
+    .login{
+    display: none;
+}
+}
+
+@media (min-width: 992px){
+    input{display: none;}
+    label{display: none;}
+
+    .header{
+        position: relative;
+    }
+    .header-top{
+        height: 80px;
+    }
+
+    .navbar{
+        display: block;
+        background-color: rgba(39, 25, 25, 0);
+        padding-top: 0px;
+        width: 50%;
+        transition:none;
+        clip-path: none;
+        margin-left: 60%;
+        margin-top: -55px;
+
+    }
+    .navbar .follow{
+        display: none;}
+    .navbar h4{
+        display: none;
+    }
+    .navbar hr{
+        display: none;
+    }
+    
+    .navbar a{
+        display: inline-block;
+        margin: 0px 10px;
+        font-size: 20px;
+    }
+    
+    .header .pic img{
+        display: block;
+        width: 115px;
+        margin-left: 50px;
+    }
+
+    nav a:hover{
+        background-color:#a92626;
+        box-shadow:none;
+        color: rgb(48, 227, 240);
+    }
+    .user{
+        display: none;
+
+    }
+    .fa-user{
+        display: none;
+    }
+    #text{
+        display: block;
+    }
+    #password{
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 1200px){
+    .navbar{
+        margin-left: 65%;
+
+    }
+    .navbar a{
+        display: inline-block;
+        margin: 0px 10px;
+
+    }
+    .header .pic img{
+        display: block;
+        width: 120px;
+        margin-left: 12%;
+        margin-top: 10px;
+    }
+}
+/* ------人生跑馬燈------ */
+marquee{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing:1.5px;
+    color: #3e3b3b;
+    background-color: #f9dfae;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 0.8;
+    box-shadow: 0px 2px 7px;
+}
+
+/* MOBILE 導覽列 END^ | 幻燈片START ˇ--------------------------------------------------------------------------------- */
+.Banner{
+    background-image: url(./img/未命名-1.png);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.RWDbanner-item{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+.carousel{
+    
+    width: 100%;
+    max-width: 1400px;
+    height:100%;
+    /* background-color: #901313; */
+    margin: auto;
+    margin-top: 50px;
+}
+
+.RWDbanner-item h1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+}
+.Banner .col{
+    margin-top: 60px;
+    
+}
+.donutAnimate{
+    padding-right: 20px;
+}
+.Banner .row{
+    margin-top: -20px;
+}
+
+
+/* 甜甜圈照片 */
+.carousel-item{
+    height: 50%;
+}
+.donut-pic{
+    animation: donut 1s ease  infinite alternate none;
+    width: 90%;
+    margin: auto;
+    /* background-color: #8e8a81; */
+}
+
+/* 按鈕 */
+.carousel-control-next{
+    opacity: 1; 
+    margin-bottom: 35px;
+}
+.nextbtn{
+    width: 150%;
+    background-color: #ea1164;
+    border-radius: 50%;    
+
+}
+.carousel-control-next img{
+    opacity:1; 
+}
+.nextbtn-shadow{
+        filter: drop-shadow( 0px 0px 15px rgba(255, 255, 255, 1));
+        animation: nextBtn 0.3s ease  infinite alternate none;
+}
+.nextbtn:hover{
+    animation:none;
+    filter: drop-shadow( 0px 0px 20px rgba(255, 255, 255, 1));
+
+}
+.nextbtn:active{
+    filter: drop-shadow( 3px 3px 2px rgb(58, 54, 46,0.5));
+    background-color: #ea2020;
+    transform: translate(3px,3px) scale(0.95);
+}
+
+
+/* --------------------- */
+@keyframes nextBtn{
+    0%{
+        filter: drop-shadow( 0px 0px 15px rgba(255, 255, 255, 0.5));
+    }
+    100%{
+        filter: drop-shadow( 0px 0px 15px rgba(255, 255, 255, 1));
+        
+    }
+}
+@keyframes donut{
+    0%{
+    transform: translateY(30px) ;
+    }
+    100%{
+        transform: translateY(-20px) ;
+    }
+}
+@media (max-width: 1200px) {
+    .Banner{background-image: none;}
+
+}
+@media screen and (max-width: 575px){
+    /* 手機直向 */
+    marquee{
+        height: 30px;
+        font-size: 14px;
+        margin-top: 70px;
+        margin-bottom: -60px;
+        width: 95%;;
+        background-color: #f9dfae;
+    }
+    .bgTxt{
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 5%;
+    }
+    .Banner .RWDbanner-item{
+        display: none;
+    } 
+    .RWDbanner{
+        display: none;
+    }
+    .donut-pic{
+        width: 80%;
+    }
+    .RWDbanner-item-2{
+        width: 110%;
+        margin-left: -10px;
+    }
+    .carousel-item{
+        height: 100%;
+        /* background-color: #fff; */
+    }
+    .carousel-control-next{
+        margin-right: 16%;
+        margin-top: 53%;
+    }
+}
+@media screen and (max-width:767px){
+        marquee{
+        height: 30px;
+        width: 80%;
+        font-size: 14px;
+        margin-top: 80px;
+        margin-bottom: -80px;
+    }
+}
+@media screen and (min-width:576px){
+    /* 手機橫向以上 */
+
+    .bgTxt{display: none;}
+    .RWDbanner-item{
+        /* background-color: #0df137; */
+        width: 140%;
+        position: relative;
+    }
+    .RWDbanner-item::after{
+        content: '|';
+        position: absolute;
+        top: 80%;
+        transform: scale(4);
+        color: azure;
+    }
+    .RWDbanner-item h1{
+        font-size: 28px;
+        margin-top: -5px;
+    }
+    .RWDbanner-item p{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 12px;
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 2px;
+    }
+    
+    .donutAnimate{
+        transform: translate(5%,-9%);
+    }
+    .carousel{
+        padding-top: 30px;}
+    .carousel-inner{
+        height: 100%;
+        width: 300px;
+    }
+    .donut-pic{
+        width: 70%;
+    }
+    .carousel-item{
+        height: 220px;
+    }
+    .carousel-control-next{
+        margin-top: 130px;
+        margin-right: 45px;
+    }
+
+
+}
+@media screen and (min-width:650px){
+
+    .bgTxt{display: none;}
+    .RWDbanner-item{
+        width: 120%;
+    }
+    .RWDbanner-item h1{
+        font-size: 30px;
+    }
+    .RWDbanner-item p{
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .RWDbanner-item::after{
+        content: '|';
+        position: absolute;
+        transform: scale(5);
+    }
+    .donutAnimate{
+        transform: translate(8%,-15%);
+        height: 250px;
+        /* background-color: #fff; */
+    }
+    .donut-pic{
+        width: 82%;
+    }
+    .carousel-control-next{
+        margin-top: 160px;
+        margin-right: 50px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    /* 768以上 */
+    marquee{
+
+        margin-top: 100px;
+        margin-bottom: -70px;
+
+    }
+    .Banner .RWDbanner-item h1{
+        font-size: 40px;}
+
+    .Banner .RWDbanner-item P{
+        font-size: 18px;
+        width: 400px;
+    }
+    .carousel-inner{
+    height: 110%;
+    width: 370px;
+    }
+    .RWDbanner-item{
+        width: 100%;
+        /* background-color: #dfc832; */
+    }
+    .donutAnimate{
+        transform: translate(-10%,-5%);
+        height: 320px;
+    }
+    .carousel-item{
+        width: 90%;
+    }
+    .donut-pic{
+        width: 90%;
+    }
+    .carousel-control-next{
+        margin-top: 200px;
+        margin-right: 60px;
+    }
+
+    .bgTxt{display: none;}
+}
+
+@media screen and (min-width: 991px){
+    /* 991以上 */
+    .Banner .RWDbanner-item h1{
+        font-size: 50px;
+    }
+    .Banner .RWDbanner-item P{
+        font-size: 21px;
+        width: 500px;
+        margin-top: 24px;
+        margin-left: 20px;
+    }
+    .RWDbanner-item{
+        width: 100%;
+        margin-top:30px ;
+        /* background-color: #3328d8; */
+    }
+    .carousel{
+    margin-top: 0px;
+    padding-top: 30px;}
+    .donutAnimate{
+        /* background-color: #cee178; */
+        transform: translate(-1%,-8%);
+        height: 350px;
+    }
+    .carousel-item{
+        width: 100%;
+    }
+    .donut-pic{
+        width: 95%;
+    }
+    .carousel-control-next{
+        width: 65px;
+        margin-top: 230px;
+        margin-right: 40px;
+    }
+    .RWDbanner-item::after{
+        content: '|';
+        position: absolute;
+        transform: scale(6);
+    }
+    marquee{
+        height: 40px;
+        width: 70%;
+        font-size: 20px;
+        color: #3e3b3b;
+        background-color: #f9dfae;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    /* 1200以上 */
+    .RWDbanner-item h1{
+        font-size: 60px;
+        letter-spacing: 1.5px;
+    }
+    .RWDbanner-item P{
+        font-size: 24px;
+        width: 900px;
+    }
+
+    .RWDbanner-item{
+        width: 90%;
+        margin-left: 20%;
+        margin-top: 5%;
+        /* background-color: #eb38bb; */
+    }
+    .donutAnimate{
+        transform: translate(-12%,1%);
+        height: 400px;
+    }
+    .carousel-inner{
+        width: 470px;
+
+        transform: translateY(-8%);
+    }
+    .carousel-item img{
+        width: 80%;
+    }
+    .carousel-control-next{
+        width: 70px;
+        margin-top: 250px;
+        margin-right: 50px;
+    }
+    marquee{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    /* 1400以上 */
+
+    .RWDbanner-item h1{
+        font-size: 80px;}
+    .RWDbanner-item{
+        width: 90%;
+        /* background-color: #ee1e1e; */
+    }
+    .RWDbanner-item P{
+        font-size: 30px;
+        margin-top: 70px;
+        width: 650px;
+    }
+    .carousel-inner{
+        transform: translateY(2%);
+        width: 550px;
+
+    }
+    .donutAnimate{
+        transform: translate(-15%,-10%);
+        height: 420px;
+    }
+    .carousel-item img{
+        width: 75%;
+    }
+    .carousel-control-next{
+        width: 70px;
+        margin-top: 290px;
+        margin-right: 80px;
+    }
+}
+
+
+
+
+/* MOBILE BANNER橫幅幻燈片 END|news START ˇ--------------------------------------------------------------------------------- */
+.news{
+    margin-bottom: 4%;
+    margin-top: 3%;
+    
+}
+
+.news .wrap{
+    background-color: #6c5f51;
+    padding: 30px 0 50px 0;
+    border-radius: 20px;
+    box-shadow:( -15px 5px 5px rgba(58, 54, 46,0.9));
+
+}
+.new-1 img{
+    width: 100%;
+    
+}
+@media screen and (min-width: 768px){
+    .news{
+        margin-bottom: 2%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .news{
+        margin-bottom: 1%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .news.container {
+        max-width: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media screen and (max-width: 767px){
+    .news{
+        display: none;
+    }
+    
+}
+
+/* news END|小活動頁 START ˇ--------------------------------------------------------------------------------- */
+
+
+.activity{
+    background-image: url(./img/活動底圖.png);
+    height: 180px;
+    margin-top: 5%;
+    padding-bottom: 50px;
+    box-shadow: 0px -25px 30px rgba(255, 255, 255, 0.4);
+}
+.activityPic{
+    margin-top: 10%;
+    width: 100%;
+}
+.activity txt{
+    height: 130px;
+}
+.activityRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.activity h1{
+    font-family: 'Racing Sans One', cursive;
+    /* font-weight: 600; */
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 7%;
+    margin-bottom: 5px;
+    cursor: default;
+    color: #8e3932;
+}
+
+.activity p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 13px;
+    cursor: default;
+    color: #fbeee7;
+
+}
+@media screen and (min-width: 575px){
+    .activity{
+        margin-top: 1%;
+    }
+    .activity h1{
+        font-size: 30px;
+    }
+    .activity p{
+        font-size: 18px;
+    }
+    .activityPic{
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 768px){
+    .activity{
+        display: none;
+    }
+}
+
+
+/* 小活動頁 END| MENU & TOP START ˇ--------------------------------------------------------------------------------- */
+.topAll{
+    height:auto;
+    margin-top: -38px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.top-left{
+    background-image: url(./img/TOP底圖.png);
+    filter: drop-shadow( -1px 2px 5px rgba(172, 105, 64, 0.6));
+    width: 100%;
+    height:800px;
+
+}
+
+
+.titleIMG img{
+    padding-top: 40px;
+    padding-bottom: 8%;
+    display: block;
+    width: 70%;
+    max-width: 400px;
+    margin: auto;
+    filter: drop-shadow( -5px 5px 5px rgb(58, 54, 46,0.5));
+
+}
+.top-left-Content{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: -15%;
+}
+
+.top-left-Content .item{
+    height: 70%;
+    margin-top: 30px;
+}
+.top-left-Content img{
+    width:140px;
+}
+.top-left-Content .item h2{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #511f31;
+}
+.top-left-Content .item p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #511f31;
+
+}
+.top-left-Content .row{
+    height: 170px;
+    border-bottom: #581313 3px dotted;
+}
+.top-left-Content .item a{
+    text-decoration: none;
+    color: #237031;
+    font-size: 12px;
+    padding: 3px;
+}
+.top2 .item{
+    padding-left:25px;
+}
+.top1 img{
+
+    display: block;
+    margin: auto;
+    filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
+}
+.top2 img{
+
+    display: block;
+    margin: auto;
+    filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
+}
+.top3 img{
+
+    display: block;
+    margin: auto;
+    filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
+}
+.top1{
+    margin: 70px 0px 5px 0px;
+}
+.top2{
+    margin: 5px 0px;
+}
+.top3{
+    margin: 5px 0px;
+}
+
+.menuBuy{
+    width: 160px;
+    height: 40px;
+    border-radius: 0px 10px 10px 10px;
+    border: none;
+    background-color: #e79b7a;
+    display: block;
+    margin: 50px auto;
+    transition: all 0.3s ease;
+    animation: MENU 0.5s ease  infinite alternate none;
+
+}
+
+.menuBuy a{
+    text-decoration: none;
+    color: #581313;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menuBuy:active{
+    background-color: #ed7f50;
+    box-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes MENU{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (min-width: 576px){
+    .menuBuy{
+        margin: 40px auto; 
+    }
+}
+
+
+@media (min-width: 768px){
+    .container.topAll{
+        display: flex;
+        width: auto;
+    }
+    .top-left{
+        width: 50%;
+
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .topAll.container{
+        max-width: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+}
+
+
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+.top-right{
+    width:50%;
+    height:800px;
+}
+.top-right-Content {
+    /* 设置新div的样式和内容 */
+    background-image: url(./img/TOP底圖.png);
+    height:800px;
+    padding: 20px;
+    filter: drop-shadow( 2px 2px 5px rgba(172, 105, 64, 0.6));
+    position: relative;
+
+}
+
+.top-right-Content .mothersCho{
+    width: 58%;
+    position: absolute;
+    bottom: 15%;
+    right: 10px;
+}
+.top-right-Content .txt{
+    position: absolute;
+    top: 10%;
+    margin-bottom: 10px;
+}
+.top-right-Content .txt h1{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 60px;
+    color: #5d0c0c;
+}
+.top-right-Content .txt p{
+    font-size: 20px;
+    color: #5d0c0c;
+    font-weight: 500;
+}
+.top-right-Content .txt2{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+}
+.top-right-Content .txt2 h5{
+    font-size: 20px;
+    text-decoration: line-through;
+
+}
+.top-right-Content .txt2 h2{
+    font-size: 80px;
+    font-family: 'Racing Sans One', cursive;
+    color: #5d0c0c;
+}
+
+
+
+@media (max-width: 767px) {
+    .top-right {
+        display: none;
+    }
+}
+
+
+
+
+/* ---MENU & TOP End | social Start--- */
+.socialMedeia{
+    margin-top: 30px;
+    background-image: url(./img/未命名-1.png);
+    padding-bottom: 50px;
+}
+.socialMedeia .wrap{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 150px;
+}
+.social h1{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 40px;
+    color: #fbeee7;
+    /* font-weight: bold; */
+    margin-left: 10px;
+    display: inline-block;
+
+}
+.social p{
+    font-size: 18px;
+    font-weight: bold;
+    margin:-30px 0px 20px 7px;
+    color: #fbeee7;
+    display: inline-block;
+
+}
+.href .icon{
+    transform: scale(1.8);
+    margin: 22px;
+}
+
+@media (min-width: 991px) {
+    .socialMedeia .wrap{
+        max-width: 1150px;
+}
+}
+
+@media (min-width: 1400px){
+    .socialMedeia .wrap{
+        max-width: 1320px;
+}
+}
+
+@media (max-width: 991px) {
+    /* 如果屏幕宽度小于768px，恢复原来的div元素的样式 */
+    .socialMedeia .wrap{
+        width: 100%;
+        padding: 0px;
+    }
+
+}
+@media (max-width: 1200px) {
+    .socialMedeia{background-image: none;}
+
+}
+
+
+
+/* <!--------------------- 店鋪地圖 ---------------------------> */
+
+.map{
+    width: 100%;
+    height:350px;
+    background-color: #2a4f33;
+}
+.map .wrap{
+    width:100%;
+    margin: auto;
+    /* background-color: #2ff160; */
+
+}
+.map h1{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 40px;
+    color: #fbeee7;
+    transform: translateY(10px);
+}
+.map p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -15px;
+    margin-bottom: 10%;
+}
+.item1{
+    width: 400px;
+    margin-left: 20px;
+    margin-top: -3%;
+    /* background-color: #5e2a2a; */
+}
+
+.storeItem h2{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    color: #fbeee7;
+
+}
+.storeItem h4{
+    display: none;
+    color: #fbeee7;
+
+}
+.map iframe{
+    width: 320px;
+    height: 180px;
+    margin-left: 40%;
+    margin-top: -50%;
+    border-radius: 10px;
+
+}
+.storeIcon{
+    display: inline-block;
+    margin-left: 8%;
+
+}
+.map   a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.map2{
+    margin-left: 40%;
+}
+
+
+
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+@media (max-width: 575px) {
+    .map{
+        width: 100%;
+        height: 450px;
+    }
+    .storeIcon{
+        display: inline-block;
+        margin-left: 15%;
+    
+    }
+    .map2{
+        margin-left: 17%;
+    }
+    .map iframe{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 5%;
+        background-color: #fff;
+        width: 310px;
+    
+    }
+
+    .item1{
+        width: 400px;
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .item1{
+        width: 400px;
+        margin-left:10%;
+    }
+    .map .wrap{
+        width: 900px;
+    }
+    .map iframe{
+        width: 320px;
+        height: 200px;
+        margin-left: 42%;
+    }
+}
+@media (min-width: 1200px) {
+    .map iframe{
+        transform: scale(1.1);
+        width: 320px;
+        height: 190px;
+        margin-left: 50%;
+        margin-top: -500px;
+    }
+    .map2{
+        margin-left: 49%;
+    }
+}
+
+
+
+
+
+/* ---頁尾--- */
+.footer{
+    font-weight: bolder;
+    font-size: 13px;
+    margin: auto;
+    width:100%;
+    background-image: url(./img/footer.png);
+    line-height: 50px;
+    height: 100%;
+
+}
+.copy p{
+    width: 320px;
+    margin: auto;
+
+}
+.container-fluid{
+    overflow: hidden;
+}
+.container{
+    overflow: hidden;
+}
