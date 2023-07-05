@@ -90,31 +90,6 @@ body .backTop:active{
 }
 
 /* ------------------------- 蓋板廣告 ------------------------- */
-/* 平板768px */
-/* #myModal .modal-open {
-    overflow: hidden;
-    padding-right: 0px;
-} */
-
-/* .modal {
-    overflow-y: auto !important;
-} */
-/* .modal::-webkit-scrollbar{
-    display: none;
-} */
-
-/* .myModal.modal.fade.show{
-    -ms-overflow-style:none; overflow:-moz-scrollbars-none; 
-    
-}
-.myModal.modal.fade.show::-webkit-scrollbar{width:0px} */
-/* .modal-backdrop.fade.show{
-    -ms-overflow-style:none; overflow:-moz-scrollbars-none;
-}
-.modal-backdrop.fade.show::-webkit-scrollbar{width:0px} */
-
-
-
 
 #myModal .modal-content{
     width: 80%;
@@ -354,7 +329,7 @@ body .backTop:active{
         width: 100%;
     }
     #myModal .modal-content{
-        transform: scale(1.5);
+        transform: scale(1.2);
         background-color: #fff;
 
     }
@@ -428,7 +403,7 @@ nav h4{
     display:block;
     background-color: #831d1d;
     position: absolute;
-    /* top: 58px; */
+    top: 58px;
     left: -20px;
     width: 106%;
     height: 400px;
