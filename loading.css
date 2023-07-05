@@ -62,11 +62,12 @@
 .blur{
     transform: scale(10);
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 40%;
+    left: 5%;
     color: rgb(255, 0, 162);
     letter-spacing: -5rem;
-    animation: blurshiny 1.5s infinite alternate ease-in-out;
+    filter: blur(4px);
+    animation: blurshiny 1s infinite alternate ease-in-out;
 }
 @keyframes dots{
     from{
@@ -90,11 +91,9 @@
 }
 @keyframes blurshiny{
     0%{
-        filter: blur(7px);
-        opacity: 0.6;
+        opacity: 0.2;
     }
     100%{
-        filter: blur(5px);
         opacity: 1;
     }
 }
