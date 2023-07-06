@@ -119,7 +119,7 @@ h4{
 
 }
 .LinkBtn1{
-    width: 200px;
+    /* width: 200px;
     height: 45px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
@@ -134,7 +134,7 @@ h4{
     color: rgb(255, 255, 255);
     font-family: 'Aboreto', cursive;
     text-decoration: none;
-    z-index: 3;
+    z-index: 3; */
     /* transition: all 0.5s ease-in-out;
     animation: light 0.5s infinite linear alternate; */
 }
