@@ -231,29 +231,21 @@ header ul::after{
     display: block;
     margin: 50px auto;
     text-decoration: none;
+    color: aliceblue;
+    
     overflow: hidden;
     position: relative;
 
 }
-.backBtn1 p{
+.backBtn p{
     font-size: 21px;
-    color: aliceblue;
-    transform: translate(22%,-43%);
+    text-align: center;
+    line-height: 6px;
+    transform: translate(0%,0%);
     letter-spacing: 1px;
 
 }
-.top p{
-    font-size: 21px;
-    color: aliceblue;
-    transform: translate(38%,-43%);
-    letter-spacing: 1px;
 
-}
-.top{
-    margin-left: 5px;
-    transition: all 1s ease;
-
-}
 
 .backBtn a::before{
     content: '';
@@ -267,7 +259,7 @@ header ul::after{
     transition: all 1s ease;
     animation: wave 4.5s infinite linear;
 }
-.backBtn a p:hover{
+.backBtn a:hover{
     color: rgb(35, 35, 35);
     font-weight: 600;
 }
@@ -286,19 +278,16 @@ header ul::after{
     height: 220px;
     transition: 0.5s ease-in-out;
     background-color: #cfcaca;
+
+
 }
 /* ooooooooooooooooooooooooooooooo */
 @media (max-width: 600px){
     .backBtn a{
         width: 170px;
     }
-    .backBtn1 p{
+    .backBtn p{
         font-size: 18px;
-        transform: translate(23%,-35%);
-    }
-    .top p{
-        font-size: 18px;
-        transform: translate(38%,-35%);
     }
     .backBtn a::before{
         content: '';
@@ -316,15 +305,10 @@ header ul::after{
 }
 @media (max-width: 400px){
     .backBtn a{
-        width: 140px;
+        width: 120px;
     }
-    .backBtn1 p{
-        font-size: 17px;
-        transform: translate(15%,-30%);
-    }
-    .top p{
+    .backBtn p{
         font-size: 18px;
-        transform: translate(36%,-35%);
     }
     .backBtn a::before{
         content: '';

@@ -183,7 +183,9 @@ h4{
     .effect:hover::after{
         pointer-events: none;
     }
-
+    .effect::after{
+        display: none;
+    }
 }
 @media (max-width:600px){
     .work{

@@ -1,13 +1,10 @@
-/*-- 作品 - 滾動視差 --*/
+/*-- 首頁 --*/
 *{
     scroll-behavior: smooth;
 }
-
 body{
     overflow-x: auto;
 }
-
-
 
 /* ----------main-top---------- */
 .main-top{
@@ -50,9 +47,6 @@ body{
     left: 0;
 
 }
-
-
-
 
 .top img#mainCloud{
     width:100%;
@@ -116,11 +110,11 @@ body{
 @media (max-width: 768px){
     .top img#mainFont-Left {
     width:200%;
-    transform: translate(-900px, 100px);
+    transform: translate(-800px, 100px);
     }
     .top img#mainFont-Right{
         width:230%;
-        transform: translate(80px, 100px);
+        transform: translate(-180px, 100px);
     }
     /* .top img#mainBack{
         width:100%;
@@ -152,11 +146,11 @@ body{
     }
     .top img#mainFont-Left {
         width:400%;
-        transform: translate(-1150px, 150px);
+        transform: translate(-950px, 150px);
         }
     .top img#mainFont-Right{
         width:400%;
-        transform: translate(-200px, 60px);
+        transform: translate(-150px, 60px);
     }
 
 
@@ -165,11 +159,11 @@ body{
 
     .top img#mainFont-Left {
         width:300%;
-        transform: translate(-980px, 80px);
+        transform: translate(-680px, 80px);
         }
     .top img#mainFont-Right{
         width:400%;
-        transform: translate(-90px, 100px);
+        transform: translate(-290px, 100px);
     }
 
 
@@ -293,7 +287,13 @@ body{
 .aboutme .txt3{
     width: 30%;
 }
-
+.line2{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    opacity: 0.2;
+    /* transition: all 0.5s ease; */
+}
 
 .skill{
     width: 80%;
@@ -509,7 +509,7 @@ body{
     .aboutme{
         display: block;
     }
-    .line{
+    .line2{
         display: none;
     }
     .skill .txt-con{
@@ -660,11 +660,16 @@ body{
     text-decoration: none;
     overflow: hidden;
     position: relative;
+    color: aliceblue;
+
 }
 .introduce a p{
     font-size: 21px;
-    color: aliceblue;
-    transform: translate(20%,-43%);
+    text-align: center;
+    line-height: 0;
+    transform: translate(0%,0%);
+    letter-spacing: 1px;
+
 }
 .introduce a::before{
     content: '';
@@ -678,26 +683,12 @@ body{
     transition: all 1s ease;
     animation: wave 4.5s infinite linear;
 }
-.introduce a p:hover{
+.introduce a:hover{
     color: rgb(35, 35, 35);
     font-weight: 600;
 
 }
-.line{
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
-    opacity: 0.2;
-    transition: all 0.5s ease;
-}
-@keyframes wave{
-    0%{
-        transform: translate(-50%,-50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
-    }
-}
+/* --------------------------- */
 .introduce a:hover::before{
     top: 125px;
     transition: 0.5s ease-in-out;
@@ -707,7 +698,14 @@ body{
     background-color: #9c9a9c;
     transition: all 0.1s ease;
 }
-
+@keyframes wave{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
 /* oooooooooooooooooooo */
 @media (max-width: 1400px){
     .title{
@@ -856,7 +854,6 @@ body{
     }
     .introduce a p{
         font-size: 17px;
-        transform: translate(15%,-35%);
     }
     .introduce a::before{
         content: '';

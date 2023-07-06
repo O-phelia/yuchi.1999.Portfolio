@@ -80,18 +80,16 @@ h4{
     }
 }
 
-@media (max-width:992px){
+ @media (max-width:992px){
     .Txt{
         width: 60%;
     }
-
-    .effect:hover{
-        pointer-events: none;
+    .effect::after{
+        display: none;
     }
-    .effect:hover::after{
-        pointer-events: none;
+    .effect{
+        overflow: visible;
     }
-
 }
 @media (max-width:600px){
     .work{
@@ -119,7 +117,7 @@ h4{
 
 }
 .LinkBtn1{
-    /* width: 200px;
+    width: 200px;
     height: 45px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
@@ -134,29 +132,29 @@ h4{
     color: rgb(255, 255, 255);
     font-family: 'Aboreto', cursive;
     text-decoration: none;
-    z-index: 3; */
-    /* transition: all 0.5s ease-in-out;
-    animation: light 0.5s infinite linear alternate; */
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    animation: light 0.5s infinite linear alternate;
 }
 
-.LinkBtn a:hover{
+.LinkBtn1:hover{
     transition: 0.5s ease-in-out;
     background-color:rgb(255, 255, 255);
     color: rgb(255, 0, 162);
 }
-/* @keyframes light{
+@keyframes light{
     0%{
         box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
     }
     100%{
         box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
     }
-} */
+}
 
 
 /* ooooooooooooooooooooooooooooooo */
 @media (max-width: 600px){
-    .LinkBtn a{
+    .LinkBtn1 a{
         font-size: 18px;
         width: 170px;
     }
@@ -164,7 +162,7 @@ h4{
 
 }
 @media (max-width: 400px){
-    .LinkBtn a{
+    .LinkBtn1 a{
         width: 170px;
         font-size: 15px;
     }

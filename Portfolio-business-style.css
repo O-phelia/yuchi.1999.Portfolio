@@ -83,6 +83,15 @@ h4{
     .Txt{
         width: 60%;
     }
+    .effect:hover{
+        pointer-events: none;
+    }
+    .effect:hover::after{
+        pointer-events: none;
+    }
+    .effect::after{
+        display: none;
+    }
 
 }
 @media (max-width:600px){
