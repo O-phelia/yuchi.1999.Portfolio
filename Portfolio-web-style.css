@@ -133,9 +133,8 @@ h4{
     font-size: 21px;
     color: rgb(255, 255, 255);
     font-family: 'Aboreto', cursive;
-
     text-decoration: none;
-
+    z-index: 3;
     /* transition: all 0.5s ease-in-out;
     animation: light 0.5s infinite linear alternate; */
 }
