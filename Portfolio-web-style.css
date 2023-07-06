@@ -115,38 +115,35 @@ h4{
 
 /* LINK BTN */
 .LinkBtn{
-    display: flex;
+    width: 100%;
 
 }
-.LinkBtn a{
+.LinkBtn1{
     width: 200px;
     height: 45px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
-    font-family: 'Aboreto', cursive;
     display: block;
     margin:  auto;
     margin-top: 30px;
     margin-bottom: 10px;
+
+    text-align: center;
+    line-height: 45px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-family: 'Aboreto', cursive;
+
     text-decoration: none;
-    overflow: hidden;
-    position: relative;
+
     transition: all 0.5s ease-in-out;
     animation: light 0.5s infinite linear alternate;
 }
-.LinkBtn1 p{
-    font-size: 21px;
-    color: aliceblue;
-    transform: translate(20%,-43%);
-}
 
-.LinkBtn a p:hover{
-    color: rgb(255, 0, 162);
-    font-weight: 600;
-}
 .LinkBtn a:hover{
     transition: 0.5s ease-in-out;
-    background-color: #ffffff;
+    background-color:rgb(255, 255, 255);
+    color: rgb(255, 0, 162);
 }
 @keyframes light{
     0%{
@@ -161,21 +158,16 @@ h4{
 /* ooooooooooooooooooooooooooooooo */
 @media (max-width: 600px){
     .LinkBtn a{
+        font-size: 18px;
         width: 170px;
     }
-    .LinkBtn1 p{
-        font-size: 18px;
-        transform: translate(20%,-30%);
-    }
+
 
 }
 @media (max-width: 400px){
     .LinkBtn a{
         width: 170px;
-    }
-    .LinkBtn1 p{
-        font-size: 18px;
-        transform: translate(18%,-30%);
+        font-size: 15px;
     }
 
 }
