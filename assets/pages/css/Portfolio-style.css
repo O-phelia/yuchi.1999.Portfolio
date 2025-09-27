@@ -1,20 +1,22 @@
 /*-- 首頁 --*/
-*{
+* {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     overflow-x: auto;
 }
 
 /* ----------main-top---------- */
-.main-top{
+.main-top {
     position: relative;
     height: 120vh;
     width: 100%;
-    background: linear-gradient(#9d235a,#e9d8e5);
+    background: linear-gradient(#9d235a, #e9d8e5);
     overflow: hidden;
 }
-.logo{
+
+.logo {
 
     font-size: 100px;
     font-weight: 900;
@@ -26,21 +28,24 @@ body{
     top: 6%;
     left: 10%;
 }
-    
-.top{
-    width:100%;
+
+.top {
+    width: 100%;
     height: 100vh;
 
 }
-.topr{
+
+.topr {
     width: 2000px;
 }
-.topl{
+
+.topl {
     width: 1000px;
     background-color: #fff;
 
 }
-.top img{
+
+.top img {
     position: absolute;
     height: 100%;
     top: 0;
@@ -48,121 +53,141 @@ body{
 
 }
 
-.top img#mainCloud{
-    width:100%;
+.top img#mainCloud {
+    width: 100%;
     object-fit: cover;
 
 }
-.top img#mainFont-Right{
-    width:120%;
+
+.top img#mainFont-Right {
+    width: 120%;
     transform: translate(500px, 0px);
 
 }
+
 .top img#mainFont-Left {
-    width:100%;
+    width: 100%;
     transform: translate(-800px, 20px);
 }
-.top img#mainBack{
-    width:100%;
+
+.top img#mainBack {
+    width: 100%;
     overflow-x: hidden;
     object-fit: cover;
 
 }
- 
-@media (max-width: 1400px){
-    .top img#mainFont-Right{
-        width:150%;
+
+@media (max-width: 1400px) {
+    .top img#mainFont-Right {
+        width: 150%;
         transform: translate(90px, 0px);
-    
+
     }
+
     .top img#mainFont-Left {
-        width:150%;
+        width: 150%;
         transform: translate(-900px, 50px);
     }
 }
-@media (max-width: 1200px){
+
+@media (max-width: 1200px) {
     .top img#mainFont-Left {
-        width:200%;
+        width: 200%;
         transform: translate(-1200px, 100px);
-        }
-    .top img#mainFont-Right{
-        width:200%;
+    }
+
+    .top img#mainFont-Right {
+        width: 200%;
         transform: translate(70px, 100px);
     }
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
     .top img#mainFont-Left {
-    width:200%;
-    transform: translate(-1050px, 100px);
+        width: 200%;
+        transform: translate(-1050px, 100px);
     }
-    .top img#mainFont-Right{
-        width:200%;
+
+    .top img#mainFont-Right {
+        width: 200%;
         transform: translate(130px, 100px);
     }
+
     /* .top img#mainBack{
         width:100%;
     } */
-    .top img#mainCloud{
-        width:200%;
-    
+    .top img#mainCloud {
+        width: 200%;
+
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     .top img#mainFont-Left {
-    width:200%;
-    transform: translate(-800px, 100px);
+        width: 200%;
+        transform: translate(-800px, 100px);
     }
-    .top img#mainFont-Right{
-        width:230%;
+
+    .top img#mainFont-Right {
+        width: 230%;
         transform: translate(-180px, 100px);
     }
+
     /* .top img#mainBack{
         width:100%;
     } */
-    .top img#mainCloud{
-        width:200%;
-    
+    .top img#mainCloud {
+        width: 200%;
+
     }
 }
-@media (max-width: 600px){
-    .logo{
+
+@media (max-width: 600px) {
+    .logo {
         font-size: 70px;
     }
+
     .top img#mainFont-Left {
-        width:300%;
+        width: 300%;
         transform: translate(-1050px, 150px);
-        }
-    .top img#mainFont-Right{
-        width:300%;
+    }
+
+    .top img#mainFont-Right {
+        width: 300%;
         transform: translate(-100px, 90px);
     }
 }
-@media (max-width: 500px){
-    .logo{
+
+@media (max-width: 500px) {
+    .logo {
         font-size: 62px;
         left: 7%;
         letter-spacing: 8px;
 
     }
+
     .top img#mainFont-Left {
-        width:400%;
+        width: 400%;
         transform: translate(-950px, 150px);
-        }
-    .top img#mainFont-Right{
-        width:400%;
+    }
+
+    .top img#mainFont-Right {
+        width: 400%;
         transform: translate(-150px, 60px);
     }
 
 
 }
-@media (max-width:400px){
+
+@media (max-width:400px) {
 
     .top img#mainFont-Left {
-        width:300%;
+        width: 300%;
         transform: translate(-680px, 80px);
-        }
-    .top img#mainFont-Right{
-        width:400%;
+    }
+
+    .top img#mainFont-Right {
+        width: 400%;
         transform: translate(-290px, 100px);
     }
 
@@ -174,60 +199,67 @@ body{
 
 
 /* ----------------------------自介------------------------------ */
-.myself{
+.myself {
     display: flex;
-    height:105%;
-    width:  100%;
-    background: linear-gradient(#681e4d,#0e070c);
+    height: 105%;
+    width: 100%;
+    background: linear-gradient(#681e4d, #0e070c);
 }
-.myself .wrap{
+
+.myself .wrap {
     width: 100%;
     padding: 3%;
     z-index: 5;
 }
-.myself-top{
+
+.myself-top {
     display: flex;
     margin-top: -12%;
     margin-bottom: 100px;
     /* background-color: #8d8a8a; */
 
 }
-.myself-top h4{
+
+.myself-top h4 {
     font-weight: 400;
 }
 
-.Yuchi{
+.Yuchi {
     width: 35%;
     /* background-color: #565555; */
     margin: auto;
     margin-left: -10px;
 }
-.Yuchi .pic{
+
+.Yuchi .pic {
     width: 70%;
     margin: auto;
     display: flex;
     justify-content: center;
-    
+
 }
-.Yuchi .pic img{
+
+.Yuchi .pic img {
     border-radius: 50%;
     box-shadow: 7px 7px 4px rgba(20, 20, 20, 0.4);
 }
 
-.Yuchi .txt{
+.Yuchi .txt {
     width: 100%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
-.Yuchi .txt h2{
+
+.Yuchi .txt h2 {
     margin: auto;
     padding-left: 4px;
     letter-spacing: 6px;
     /* background-color: #565555; */
 
 }
-.talk{
+
+.talk {
     width: 60%;
     /* background-color: #565555; */
     margin: auto;
@@ -237,7 +269,7 @@ body{
 
 }
 
-.talk-1{
+.talk-1 {
     width: fit-content;
     background-color: rgba(225, 225, 225, 0.4);
     border-radius: 0px 15px 15px 15px;
@@ -245,38 +277,42 @@ body{
     margin-bottom: 15px;
 }
 
-.talk-2{
+.talk-2 {
     width: fit-content;
     background-color: rgba(225, 225, 225, 0.2);
     border-radius: 0px 15px 15px 15px;
     padding: 15px;
     margin-bottom: 15px;
 }
-.talk-3{
+
+.talk-3 {
     background-color: rgba(225, 225, 225, 0.4);
     border-radius: 0px 20px 20px 20px;
     padding: 15px;
 
 }
-.talk h4{
+
+.talk h4 {
     line-height: 24px;
     width: 100%;
     margin: auto;
     color: #ffffff;
 }
-.wrap2{
+
+.wrap2 {
     width: 100%;
     margin-top: 50px;
 }
 
 
-.aboutme{
+.aboutme {
     width: 80%;
-    /* background-color: #aaa9a9; */
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
-.aboutme .txt1{
+
+/* .aboutme .txt1{
     width: 40%;
     margin-right:15px;
 }
@@ -286,8 +322,8 @@ body{
 }
 .aboutme .txt3{
     width: 30%;
-}
-.line2{
+} */
+.line2 {
     width: 80%;
     margin: auto;
     margin-top: 40px;
@@ -295,276 +331,329 @@ body{
     /* transition: all 0.5s ease; */
 }
 
-.skill{
+.skill {
     width: 80%;
-    /* background-color: #6b6a6a; */
     margin: 30px auto;
     display: flex;
+    justify-content: space-between;
 }
-.skill br{
+
+.skill a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.skill a:hover {
+    color: rgb(255, 0, 162);
+}
+
+.skill br {
     display: none;
 }
 
-.software{
+.software {
     width: 60%;
-    /* background-color: #6b6a6a; */
     margin: 20px auto;
     border-radius: 20px;
     overflow: hidden;
 }
-.software img{
+
+.software img {
     width: 50%;
 }
 
-.myself h2{
+.myself h2 {
     color: #fff;
     letter-spacing: 10px;
-    
+
 }
-.txt-con{
-    width: 100%;
-    /* background-color: #684c4c; */
-}
-.myself h3{
+
+.myself h3 {
     color: #fff;
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: 600;
 }
-.myself p{
-    /* margin-left: 20px; */
+
+.myself p {
     letter-spacing: 3px;
     color: #fff;
     font-size: 15px;
     line-height: 20px;
 }
+
 /* ooooooooooooooooo */
-@media (min-width: 700px){
-    .talk{
+@media (min-width: 700px) {
+    .talk {
         margin-top: 40%;
     }
-    .myself-top{
+
+    .myself-top {
         margin-top: -40%;
     }
-        .myself-top img{
+
+    .myself-top img {
         width: 70%;
     }
 }
-@media (min-width: 800px){
-    .myself{
-        height:250%;
-        }
+
+@media (min-width: 800px) {
+    .myself {
+        height: 250%;
+    }
 }
 
-@media (min-width: 900px){
-    .talk{
+@media (min-width: 900px) {
+    .talk {
         margin-top: 30%;
-        
+
     }
 
-    .myself-top{
+    .myself-top {
         margin-top: -30%;
     }
-    .myself{
-        height:230%;
-        }
+
+    .myself {
+        height: 230%;
+    }
 }
 
-@media (min-width: 1200px){
-    .talk{
+@media (min-width: 1200px) {
+    .talk {
         margin-top: 8%;
     }
 
-    .myself-top{
+    .myself-top {
         margin-top: -15%;
-}
-    .myself-top img{
+    }
+
+    .myself-top img {
         width: 50%;
     }
-    .myself{
-        height:150%;
-        }
+
+    .myself {
+        height: 150%;
+    }
 }
-@media (min-width: 1400px){
-    .software{
+
+@media (min-width: 1400px) {
+    .software {
         margin-top: 40px;
     }
 
 }
+
 /* ooooooooooooooooooooooooooooooooooooo */
- @media (max-width: 1100px){
-     .software{
+@media (max-width: 1100px) {
+    .software {
         width: 90%;
     }
-    .aboutme{
+
+    .aboutme {
         width: 90%;
     }
-    .skill{
+
+    .skill {
         width: 90%;
     }
 
 
 }
-@media (max-width: 850px){
-    .myself{
-        height:280%;
-        }
 
-    .myself-top{
+@media (max-width: 850px) {
+    .myself {
+        height: 280%;
+    }
+
+    .myself-top {
         margin-bottom: 8%;
     }
-    .myself h3{
+
+    .myself h3 {
         font-size: 17px;
         letter-spacing: 3px;
     }
-    .myself p{
+
+    .myself p {
         letter-spacing: 3px;
         font-size: 14px;
         line-height: 22px;
     }
-    .skill br{
+
+    .skill br {
         display: block;
     }
-    .skill .txt2{
-        margin-left: 16px;
+
+    .skill .txt2 {
+        margin-left: 20px;
     }
-    .aboutme .txt2{
+
+    .aboutme .txt2 {
         margin-left: 5px;
     }
 
 }
- @media (max-width: 700px){
 
-     .software{
-         width: 80%;
+@media (max-width: 700px) {
+
+    .software {
+        width: 80%;
     }
-    .skill .txt1{
+
+    .skill .txt1 {
         margin-right: 20px;
     }
-    .aboutme .txt1{
+
+    .aboutme .txt1 {
         width: 34%;
-        margin-right:5px;
+        margin-right: 5px;
         /* background-color: #8b0e0e; */
     }
-    .aboutme .txt2{
+
+    .aboutme .txt2 {
         width: 32%;
-        margin-right:5px;
-    }
-    .aboutme .txt3{
-        width: 34%;
-    }
-    .myself{
-        height:260%;
-    }
-    .myself-top{
-        display: block;
-        width: 100%;
-        margin-top:-10% ;
-    }
-    .Yuchi{
-    width: 100%;
-    margin: auto;
-    margin-left: 0px;
-    /* background-color: #565555; */
+        margin-right: 5px;
     }
 
-    .myself-top img{
+    .aboutme .txt3 {
+        width: 34%;
+    }
+
+    .myself {
+        height: 260%;
+    }
+
+    .myself-top {
+        display: block;
+        width: 100%;
+        margin-top: -10%;
+    }
+
+    .Yuchi {
+        width: 100%;
+        margin: auto;
+        margin-left: 0px;
+        /* background-color: #565555; */
+    }
+
+    .myself-top img {
         width: 40%;
     }
-    .talkh4{
+
+    .talkh4 {
         display: none;
     }
-    .talk{
+
+    .talk {
         width: 75%;
         /* background-color: #565555; */
         margin: auto;
         margin-top: 10%;
         letter-spacing: 4px;
     }
-    .talk-1{
-        border-radius: 0px 18px 18px 18px;
-        padding:15px;
-        margin-bottom: 20px;
-    }
-    .talk-2{
+
+    .talk-1 {
         border-radius: 0px 18px 18px 18px;
         padding: 15px;
         margin-bottom: 20px;
     }
-    .talk-3{
+
+    .talk-2 {
+        border-radius: 0px 18px 18px 18px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .talk-3 {
         border-radius: 0px 18px 18px 18px;
         padding: 15px;
     }
 }
-@media (max-width: 576px){
-    .wrap2{
+
+@media (max-width: 576px) {
+    .wrap2 {
         margin-top: 100px;
     }
-    .myself-top img{
+
+    .myself-top img {
         width: 55%;
     }
-    .myself{
-    height: 300%;
+
+    .myself {
+        height: 300%;
     }
-    .aboutme{
+
+    .aboutme {
         display: block;
     }
-    .line2{
+
+    .line2 {
         display: none;
     }
-    .skill .txt-con{
+
+    .skill .txt-con {
         width: 80%;
         margin: auto;
         margin-top: 50px;
     }
-    .aboutme .txt1{
-        width:80%;
-        margin:auto;
+
+    .aboutme .txt1 {
+        width: 80%;
+        margin: auto;
         margin-bottom: 48px;
     }
-    .aboutme .txt2{
-        width:80%;
-        margin:auto;
+
+    .aboutme .txt2 {
+        width: 80%;
+        margin: auto;
         margin-bottom: 48px;
     }
-    .aboutme .txt3{
-        width:80%;
-        margin:auto;
+
+    .aboutme .txt3 {
+        width: 80%;
+        margin: auto;
         margin-bottom: 48px;
     }
-    .skill{
+
+    .skill {
         display: block;
     }
-    .skill .txt1{
-        margin:auto;
+
+    .skill .txt1 {
+        margin: auto;
     }
-    
-    .software img{
+
+    .software img {
         width: 100%;
     }
-    .software{
+
+    .software {
         margin-top: 50px;
         width: 80%;
     }
 
 
 }
-@media (max-width: 450px){
-    .myself h3{
+
+@media (max-width: 450px) {
+    .myself h3 {
         font-size: 18px;
     }
-    .myself p{
+
+    .myself p {
         font-size: 12px;
 
     }
 }
-@media (max-width: 350px){
-    .txt-con{
+
+@media (max-width: 350px) {
+    .txt-con {
         width: 95%;
         margin: auto;
         margin-top: 50px;
     }
-     /* .myself .wrap{
+
+    /* .myself .wrap{
          background-color: #494949;
      } */
 }
@@ -573,10 +662,11 @@ body{
 
 
 /* ----------介紹區塊---------- */
-.work{
+.work {
     overflow-x: hidden;
 }
-.work_bg{
+
+.work_bg {
     width: 100%;
     height: 70vh;
     display: grid;
@@ -584,9 +674,11 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
+    will-change: transform;
+    transform-style: preserve-3d;
 }
-.title{
+
+.title {
     color: aliceblue;
     font-size: 7rem;
     mix-blend-mode: difference;
@@ -594,24 +686,28 @@ body{
     letter-spacing: 5px;
 
 }
-.web{
-    background-image: url(./img/Top-img/網頁-封面.png);
-    
+
+.web {
+    background-image: url(../../../img/Top-img/web.png);
+
 }
-.business{
-    background-image: url(./img/Top-img/商業設計-封面.png);
-    
+
+.business {
+    background-image: url(../../../img/Top-img/business.png);
+
 }
-.graphic{
-    background-image: url(./img/Top-img/平面設計-封面1.png);
+
+.graphic {
+    background-image: url(../../../img/Top-img/graphic.png);
 }
-.other{
-    background-image: url(./img/Top-img/其他-封面.png);
+
+.other {
+    background-image: url(../../../img/Top-img/other.png);
 }
 
 
-.introduce{
-    background: linear-gradient(#250c1d,#0e070c);
+.introduce {
+    background: linear-gradient(#250c1d, #0e070c);
     height: 30vh;
     overflow: auto;
     display: flex;
@@ -619,7 +715,8 @@ body{
     align-items: center;
     padding-bottom: 20px;
 }
-.work .txt{
+
+.work .txt {
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -630,14 +727,16 @@ body{
     overflow-y: hidden;
 
 }
-.work .txt h3{
+
+.work .txt h3 {
     width: 15%;
     line-height: 30px;
     font-size: 20px;
     font-weight: 600;
     margin-top: 0px;
 }
-.work .txt p{
+
+.work .txt p {
     width: 80%;
     font-size: 15px;
     line-height: 30px;
@@ -645,10 +744,12 @@ body{
     align-items: start;
     margin-top: 0px;
 }
-.web-intro{
+
+.web-intro {
     padding-top: 20px;
 }
-.introduce a{
+
+.introduce a {
     width: 200px;
     height: 45px;
     background-color: rgba(225, 225, 225, 0.2);
@@ -663,15 +764,17 @@ body{
     color: aliceblue;
 
 }
-.introduce a p{
+
+.introduce a p {
     font-size: 21px;
     text-align: center;
     line-height: 0;
-    transform: translate(0%,0%);
+    transform: translate(0%, 0%);
     letter-spacing: 1px;
 
 }
-.introduce a::before{
+
+.introduce a::before {
     content: '';
     position: absolute;
     width: 300px;
@@ -683,198 +786,236 @@ body{
     transition: all 1s ease;
     animation: wave 4.5s infinite linear;
 }
-.introduce a:hover{
+
+.introduce a:hover {
     color: rgb(35, 35, 35);
     font-weight: 600;
 
 }
+
 /* --------------------------- */
-.introduce a:hover::before{
+.introduce a:hover::before {
     top: 125px;
     transition: 0.5s ease-in-out;
     background-color: #cfcaca;
 }
-.introduce a:active::before{
+
+.introduce a:active::before {
     background-color: #9c9a9c;
     transition: all 0.1s ease;
 }
-@keyframes wave{
-    0%{
-        transform: translate(-50%,-50%) rotate(0deg);
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
     }
-    100%{
-        transform: translate(-50%,-50%) rotate(360deg);
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
 /* oooooooooooooooooooo */
-@media (max-width: 1400px){
-    .title{
+@media (max-width: 1400px) {
+    .title {
         font-size: 92px;
     }
-    .work .txt{
+
+    .work .txt {
         width: 80%;
         flex-direction: column;
     }
-    .work .txt h3{
+
+    .work .txt h3 {
         width: 100%;
         font-size: 18px;
     }
-    .work .txt p{
+
+    .work .txt p {
         width: 100%;
         font-size: 14px;
     }
-    .work_bg{
-        height: 65vh;}
-    .introduce{
+
+    .work_bg {
+        height: 65vh;
+    }
+
+    .introduce {
         height: 35vh;
     }
 }
 
-@media (max-width: 1200px){
-    .title{
+@media (max-width: 1200px) {
+    .title {
         font-size: 90px;
     }
 
-    .work .txt h3{
+    .work .txt h3 {
         font-size: 20px;
     }
-    .work .txt p{
+
+    .work .txt p {
         font-size: 15px;
-        
+
     }
-    .work_bg{
+
+    .work_bg {
         height: 70vh;
     }
-    .introduce{
+
+    .introduce {
         height: 30vh;
+    }
 }
-}
+
 /* 1100以下無視差效果 */
- @media (max-width: 1100px){
-    .title{
+@media (max-width: 1100px) {
+    .title {
         width: 100%;
         font-size: 90px;
         margin: auto;
         mix-blend-mode: luminosity;
     }
-    .work .txt h3{
+
+    .work .txt h3 {
         font-size: 15px;
     }
-    .work .txt p{
+
+    .work .txt p {
         font-size: 13px;
     }
-    .work_bg{
-        height: 100vh;}
-    .introduce{
+
+    .work_bg {
+        height: 100vh;
+    }
+
+    .introduce {
         height: 100vh;
     }
 }
 
-@media (max-width: 913px){
-    .title{
+@media (max-width: 913px) {
+    .title {
         font-size: 65px;
         letter-spacing: 10px;
     }
-    .work .txt h3{
+
+    .work .txt h3 {
         font-size: 16px;
     }
-    .work .txt p{
+
+    .work .txt p {
         font-size: 14px;
     }
-    .work_bg{
+
+    .work_bg {
         height: 60vh;
-        background-size:850px 500px; 
+        background-size: 850px 500px;
     }
-    .introduce{
+
+    .introduce {
         height: 40vh;
     }
 }
-@media (max-width: 740px){
-    .title{
+
+@media (max-width: 740px) {
+    .title {
         font-size: 55px;
         /* position: absolute;
         bottom: 5%;
         left: 6%; */
 
     }
-    .work_bg{
+
+    .work_bg {
         height: 100vh;
         position: relative;
     }
-    .introduce{
+
+    .introduce {
         height: 100vh;
     }
 }
 
- @media (max-width: 600px){
-    .work_bg{
+@media (max-width: 600px) {
+    .work_bg {
         height: 60vh;
-        background-size:576px 350px; 
+        background-size: 576px 350px;
     }
-    .introduce{
+
+    .introduce {
         height: 40vh;
     }
-    .title{
+
+    .title {
         font-size: 85px;
         position: absolute;
         bottom: 5%;
         left: 5%;
     }
-    .work .txt h3{
+
+    .work .txt h3 {
         font-size: 18px;
     }
-    .work .txt p{
+
+    .work .txt p {
         font-size: 14px;
     }
 }
-@media (max-width: 450px){
-    .title{
+
+@media (max-width: 450px) {
+    .title {
         font-size: 70px;
-        left:5%;
+        left: 5%;
         letter-spacing: 6px;
     }
-    .business{
+
+    .business {
         font-size: 65px;
 
     }
-    .work_bg{
-        background-size:560px 340px; 
+
+    .work_bg {
+        background-size: 560px 340px;
     }
-    .work .txt h3{
+
+    .work .txt h3 {
         margin-bottom: 5px;
         font-weight: 600;
     }
-    .work .txt p{
+
+    .work .txt p {
         line-height: 25px;
         font-size: 12px;
     }
-    .introduce a{
+
+    .introduce a {
         width: 150px;
         height: 40px;
     }
-    .introduce a p{
+
+    .introduce a p {
         font-size: 17px;
     }
-    .introduce a::before{
+
+    .introduce a::before {
         content: '';
         position: absolute;
         left: 70px;
         width: 290px;
         height: 290px;
     }
-    
+
 }
-@media (max-width: 350px){
-    .title{
-        font-size:55px;
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 55px;
     }
-    .business{
+
+    .business {
         font-size: 50px;
 
     }
 
 }
-
-
-
-
