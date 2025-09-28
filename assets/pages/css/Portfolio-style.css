@@ -118,7 +118,6 @@ body {
     } */
     .top img#mainCloud {
         width: 200%;
-
     }
 }
 
@@ -138,7 +137,6 @@ body {
     } */
     .top img#mainCloud {
         width: 200%;
-
     }
 }
 
@@ -175,8 +173,6 @@ body {
         width: 400%;
         transform: translate(-150px, 60px);
     }
-
-
 }
 
 @media (max-width:400px) {
@@ -190,10 +186,54 @@ body {
         width: 400%;
         transform: translate(-290px, 100px);
     }
-
-
 }
 
+.container_mouse {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    transition: opacity 0.5s ease-out;
+}
+
+.container_mouse .mouse-btn {
+    margin: 10px auto;
+    width: 40px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    display: flex;
+}
+
+.container_mouse .mouse-btn .mouse-scroll {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0.918), rgb(255, 255, 255));
+    border-radius: 50%;
+    margin: auto;
+    animation: scrolling 1s linear infinite;
+}
+.container_mouse.fade-out {
+    opacity: 0; /* 淡出狀態 */
+}
+
+@keyframes scrolling {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
 
 
 
@@ -344,7 +384,7 @@ body {
 }
 
 .skill a:hover {
-    color: rgb(255, 0, 162);
+    color: var(--color-primary);
 }
 
 .skill br {
@@ -674,8 +714,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    will-change: transform;
-    transform-style: preserve-3d;
 }
 
 .title {

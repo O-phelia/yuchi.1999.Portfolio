@@ -14,12 +14,17 @@
       $.Module.loading.init();
       $.Module.wow.init();
       $.Module.navbar.init();
+      $.Module.headroom.init();
     },
   };
 
   $.Module.wow = {
     init() {
-      new WOW().init();
+      new WOW({
+        offset: 50,
+        mobile: true,
+        live: true
+      }).init();
     }
   };
 
@@ -33,7 +38,7 @@
 
       bugar.addEventListener('click', () => {
         let currentImageSrc = bugar.getAttribute('src');
-        
+
         if (currentImageSrc === './img/Top-img/PNG/bugar.png') {
           bugar.setAttribute('src', './img/Top-img/PNG/icon_close.png');
         } else {
@@ -43,45 +48,79 @@
     }
   };
 
-$.Module.loading = {
-    originalOverflowStyle: document.body.style.overflow,
+  $.Module.loading = {
+    originalOverflowStyle: '',
+    
     init() {
+        this.originalOverflowStyle = document.body.style.overflow || '';
         this.disableScroll();
+        window.scrollTo(0, 0); // 保留原生方法
         this.bindLoadingEvents();
     },
+    
     disableScroll() {
-        document.body.style.overflow = 'hidden';
+        $('body').css('overflow', 'hidden');
+        $('html').css('overflow', 'hidden');
     },
+    
     enableScroll() {
-        document.body.style.overflow = this.originalOverflowStyle;
+        $('body').css('overflow', this.originalOverflowStyle);
+        $('html').css('overflow', '');
     },
+    
     bindLoadingEvents() {
+        // 保留原生事件監聽
         window.addEventListener('load', () => {
             setTimeout(() => {
                 this.hideLoadingScreen();
             }, 2300);
         });
     },
+    
     hideLoadingScreen() {
-        const status = document.getElementById('status');
-        const preloader = document.getElementById('preloader');
-
-        if (status) {
-            status.style.transition = 'opacity 0.5s';
-            status.style.opacity = '0';
+        // 混合使用 jQuery 和原生
+        const $status = $('#status');
+        const $preloader = $('#preloader');
+        
+        if ($status.length) {
+            $status[0].style.transition = 'opacity 0.5s ease-out';
+            $status[0].style.opacity = '0';
         }
-
-        if (preloader) {
-            preloader.style.transition = 'opacity 0.5s';
-            preloader.style.opacity = '0';
-
+        
+        if ($preloader.length) {
+            $preloader[0].style.transition = 'opacity 0.5s ease-out';
+            $preloader[0].style.opacity = '0';
+            
             setTimeout(() => {
-                preloader.parentNode.removeChild(preloader);
+                $preloader.remove();
                 this.enableScroll();
             }, 500);
+        } else {
+            this.enableScroll();
         }
     }
 };
+
+$.Module.headroom = {
+    init() {
+        const header = document.querySelector("header");
+        
+        if (header) {
+            const headroom = new Headroom(header, {
+                offset: 80,
+                tolerance: 5, 
+                classes: {
+                    initial: "headroom",
+                    pinned: "headroom--pinned",
+                    unpinned: "headroom--unpinned"
+                }
+            });
+            
+            headroom.init();
+        }
+    }
+};
+
 
   $.Page.webPage = webPage;
 })(window.jQuery);
