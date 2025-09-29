@@ -1,0 +1,285 @@
+.work{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+}
+.effect{
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.effect::after{
+    content: '';
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-primary);
+    opacity: 0.8;
+
+    position: absolute;
+    top: -800px;
+    left: 15%;
+    transform: scale(2);
+    border-radius: 50%;
+    transition: all 1.3s ease-in-out;
+    z-index: -1;
+}
+
+
+
+h4{
+    line-height: 30px;
+    font-weight: 600;
+    font-family: '微軟正黑體';
+}
+
+.work span{
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+.Txt{
+    padding-left: 10px;
+    width: 98%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 15px;
+    color: var(--color-primary);
+    cursor: default;
+}
+@media (min-width:992px){
+    .work{
+        width: 80%;
+}
+}
+@media (min-width:1000px){
+    .work{
+        width: 80%;
+    }
+    .effect{
+        padding: 30px;
+    }
+   .effect:hover{
+        background-color:rgba(255, 255, 255, 0);
+        transition: all 0.3s ease-in-out;
+    }
+    .effect:hover .Txt h4{
+        color: #2c2626;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .effect:hover::after{
+        bottom: 40%;
+        transform: scale(18);
+        transition: all 1.3s ease-in-out;
+        
+    }
+}
+@media (max-width:992px){
+    .Txt{
+        width: 60%;
+    }
+
+    .effect:hover{
+        pointer-events: none;
+    }
+    .effect:hover::after{
+        pointer-events: none;
+    }
+    .effect::after{
+        display: none;
+    }
+
+}
+@media (max-width:600px){
+    .work{
+        margin-top: 25%;
+    }
+    .Txt{
+        width: 98%;
+        padding-left: 0px;
+        margin: auto;
+    }
+    .work span{
+        font-size: 15px;
+        letter-spacing: 2px;
+    
+    }
+    .work h4{
+        font-size: 13px;
+
+    }
+}
+/* --------------------------------------- 作品 ------------------------------------------- */
+
+.timemeet1 img{
+    width: 100%;
+}
+.timemeet4 img{
+    width: 100%;
+}
+.timemeet6{
+    padding: 30px 20px;
+}
+.time img{
+    width: 100%;
+}
+.time{
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 315px;
+}
+
+@media (min-width:768px){
+
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+    .time{
+        display: flex;
+        margin: 20px 0px;
+    }
+    .time img{
+        width: 100%;
+    }
+
+}
+@media (min-width:1200px){
+
+    iframe{
+        width: 100%;
+        height: 600px;
+    }
+    .timemeet6{
+        padding: 80px 80px;
+    }
+    
+}
+
+.culture img{
+    width: 100%;
+}
+.culture1{
+    margin-bottom: 20px;
+}
+.culture_div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px){
+
+    .culture_div{
+        display: flex;
+        margin: 20px 0px;
+    }
+    .culture_div img{
+        width: 100%;
+    }
+
+}
+.issue img{
+    width: 100%;
+}
+
+/* LINK BTN */
+.LinkBtn{
+    display: flex;
+
+}
+.LinkBtn a{
+    width: 200px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    font-family: 'Aboreto', cursive;
+    display: block;
+    margin: 50px auto;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    animation: light 0.5s infinite linear alternate;
+}
+.LinkBtn1 p{
+    font-size: 21px;
+    color: aliceblue;
+    transform: translate(15%,-43%);
+}
+
+.LinkBtn a p:hover{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.LinkBtn a:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #ffffff;
+}
+@keyframes light{
+    0%{
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+/* ooooooooooooooooooooooooooooooo */
+@media (max-width: 600px){
+    .LinkBtn a{
+        width: 170px;
+    }
+    .LinkBtn1 p{
+        font-size: 18px;
+        transform: translate(15%,-30%);
+    }
+
+}
+.issue{
+    background-color: #1c1b1b;
+}
+@media (min-width:768px){
+    .issue_div{
+        display: flex;
+        
+    }
+    .issuepic {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width:1000px){
+
+    .issue_div{
+        display: flex;
+        
+    }
+    .issuepic {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .issuepic img {
+    max-width: 100%;
+    max-height: 100%;
+    }
+    .issuetxt{
+        padding-left: 5%;
+    }
+
+}

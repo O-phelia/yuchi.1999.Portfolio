@@ -742,7 +742,10 @@ body {
 .other {
     background-image: url(../../../img/Top-img/other.png);
 }
-
+.uiux{
+    background-image: url(../../../img/Top-img/uiux.png);
+    
+}
 
 .introduce {
     background: linear-gradient(#250c1d, #0e070c);
@@ -753,6 +756,7 @@ body {
     align-items: center;
     padding-bottom: 20px;
 }
+
 
 .work .txt {
     color: aliceblue;

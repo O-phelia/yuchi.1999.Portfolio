@@ -1,0 +1,241 @@
+
+.work{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+}
+.effect{
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.effect::after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-primary);
+    opacity: 0.8;
+    position: absolute;
+    bottom: -320px;
+    left: 38%;
+    transform: scale(2);
+    border-radius: 50%;
+    transition: all 1.3s ease-in-out;
+    z-index: -1;
+}
+
+h4{
+    line-height: 30px;
+    font-weight: 600;
+    font-family: '微軟正黑體';
+}
+
+.work span{
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+.Txt{
+    padding-left: 10px;
+    width: 47%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 15px;
+    color: rgb(202, 0, 128);
+    /* color: var(--color-primary); */
+
+    cursor: default;
+}
+
+@media (min-width:992px){
+    .work{
+        width: 80%;
+}
+}
+@media (min-width:1000px){
+    .work{
+        width: 80%;
+    }
+    .effect{
+        padding: 30px;
+    }
+    .effect:hover{
+        background-color:rgba(255, 255, 255, 0);
+        transition: all 0.3s ease-in-out;
+    }
+    .effect:hover .Txt h4{
+        color: #2c2626;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .effect:hover::after{
+        bottom: 40%;
+        transform: scale(18);
+        transition: all 1.3s ease-in-out;
+        
+    }
+}
+
+ @media (max-width:992px){
+    .Txt{
+        width: 60%;
+    }
+    .effect::after{
+        display: none;
+    }
+    .effect{
+        overflow: visible;
+    }
+}
+@media (max-width:600px){
+    .work{
+        margin-top: 25%;
+    }
+    .Txt{
+        width: 90%;
+        padding-left: 0px;
+        margin: auto;
+    }
+    .work span{
+        font-size: 15px;
+        letter-spacing: 2px;
+    
+    }
+    .work h4{
+        font-size: 13px;
+
+    }
+}
+
+/* LINK BTN */
+.LinkBtn{
+    width: 100%;
+
+}
+.LinkBtn1{
+    width: 200px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    display: block;
+    margin:  auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    line-height: 45px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-family: 'Aboreto', cursive;
+    text-decoration: none;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+    animation: light 0.5s infinite linear alternate;
+}
+
+.LinkBtn1:hover{
+    transition: 0.5s ease-in-out;
+    background-color:rgb(255, 255, 255);
+    color: var(--color-primary);
+}
+@keyframes light{
+    0%{
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+/* ooooooooooooooooooooooooooooooo */
+@media (max-width: 600px){
+    .LinkBtn1 a{
+        font-size: 18px;
+        width: 170px;
+    }
+
+
+}
+@media (max-width: 400px){
+    .LinkBtn1 a{
+        width: 170px;
+        font-size: 15px;
+    }
+
+}
+/* --------------------------------------- 作品 ------------------------------------------- */
+.japan img{
+    width: 100%;
+}
+.japan2{
+    background-color: #fff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+.japan2 img{
+    width: 15%;
+}
+.book1 img{
+    width: 100%;
+
+}
+.donut img{
+    width: 100%;
+}
+.donut1{
+    position: relative;
+}
+.donutpic img{
+    width: 90%;
+}
+.donutpic {
+    width: 40%;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    animation: donut 1s ease  infinite alternate none;
+}
+.donut2{
+    background-color: #ffffff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+.donut2 img{
+    width: 25%;
+
+}
+@keyframes donut{
+    0%{
+    transform: translateY(30px) ;
+    }
+    100%{
+        transform: translateY(-20px) ;
+    }
+}
+@keyframes donut-phone{
+    0%{
+    transform: translateY(1px) ;
+    }
+    100%{
+        transform: translateY(-10px) ;
+    }
+}
+@media (max-width: 600px){
+    .donutpic{
+        animation: donut-phone 1s ease  infinite alternate none;
+    }
+
+}

@@ -1,0 +1,211 @@
+
+.work{
+    width: 90%;
+    margin: auto;
+    margin-top: 15%;
+}
+.effect{
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.effect::after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-primary);
+    opacity: 0.8;
+
+    position: absolute;
+    bottom: -320px;
+    left: 38%;
+    transform: scale(2);
+    border-radius: 50%;
+    transition: all 1.3s ease-in-out;
+    z-index: -1;
+}
+
+
+
+
+
+h4{
+    line-height: 30px;
+    font-weight: 600;
+    font-family: '微軟正黑體';
+}
+.work span{
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+.Txt{
+    padding-left: 10px;
+    width: 47%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 15px;
+    color: var(--color-primary);
+    cursor: default;
+}
+@media (min-width:992px){
+    .work{
+        width: 80%;
+}
+}
+@media (min-width:1000px){
+    .work{
+        width: 80%;
+    }
+    .effect{
+        padding: 30px;
+    }
+   .effect:hover{
+        background-color:rgba(255, 255, 255, 0);
+        transition: all 0.3s ease-in-out;
+    }
+    .effect:hover .Txt h4{
+        color: #2c2626;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .effect:hover::after{
+        bottom: 40%;
+        transform: scale(18);
+        transition: all 1.3s ease-in-out;
+        
+    }
+}
+@media (max-width:992px){
+    .Txt{
+        width: 60%;
+    }
+    .effect:hover{
+        pointer-events: none;
+    }
+    .effect:hover::after{
+        pointer-events: none;
+    }
+    .effect::after{
+        display: none;
+    }
+
+}
+@media (max-width:600px){
+    .work{
+        margin-top: 25%;
+    }
+    .Txt{
+        width: 90%;
+        padding-left: 0px;
+        margin: auto;
+    }
+    .work span{
+        font-size: 15px;
+        letter-spacing: 2px;
+    
+    }
+    .work h4{
+        font-size: 13px;
+
+    }
+}
+/* --------------------------------------- 作品 ------------------------------------------- */
+
+.cu-studio img{
+    width: 100%;
+}
+.cu{
+    padding: 25px 70px 0px 70px;
+}
+.cu-studio4{
+    margin-bottom: 30px;
+
+}
+@media (max-width:600px){
+    .cu{
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+/* ozenna */
+
+.ozenna img{
+    width: 100%;
+}
+.oz{
+    margin-top: 10px;
+}
+@media (min-width:991px){
+    .ozenna3{
+        padding: 0 4.9%;
+    }
+}
+/* cofelogo */
+.cofelogo{
+    margin-bottom: 60px;
+    background-color: #393030;
+    box-shadow: 0px 2px 20px rgba(33, 32, 32, 0.8);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.cofelogo img{
+    width: 100%;
+
+}
+.cofelogo2{
+    margin-top: -5px;
+}
+
+
+/* foodmenu */
+
+.foodmenu1 img{
+    width: 100%;
+    
+}
+.foodmenu2{
+    margin-top: 20px;
+    display: flex;
+}
+.foodmenu2 img{
+    width: 100%;
+
+}
+/* hostfamily */
+.host img{
+    width: 100%;
+}
+.host2{
+    margin-top: -5px;
+    display: flex;
+}
+.host2 img{
+    width: 100%;
+}
+/* AD */
+.AD1{
+    display: flex;
+}
+.AD img{
+    width: 50%;
+}
+@media (max-width:600px){
+    .AD1{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AD1 img{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
