@@ -236,8 +236,6 @@ body {
 }
 
 
-
-
 /* ----------------------------自介------------------------------ */
 .myself {
     display: flex;
@@ -352,17 +350,6 @@ body {
     justify-content: space-between;
 }
 
-/* .aboutme .txt1{
-    width: 40%;
-    margin-right:15px;
-}
-.aboutme .txt2{
-    width: 30%;
-    margin-right:5px;
-}
-.aboutme .txt3{
-    width: 30%;
-} */
 .line2 {
     width: 80%;
     margin: auto;
